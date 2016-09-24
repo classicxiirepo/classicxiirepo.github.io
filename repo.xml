@@ -5,5 +5,10 @@
 			<url>https://twitter.com/Classicxii</url>
 			<iconclass>glyphicon glyphicon-thumbs-up</iconclass>
 		</link>
+    <link>
+			<name>Buy me a cup of coffee</name>
+			<url>https://www.paypal.me/classicxii</url>
+			<iconclass>glyphicon glyphicon-thumbs-up</iconclass>
+		</link>
 	</footerlinks>
 </repo>
