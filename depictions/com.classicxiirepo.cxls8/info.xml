@@ -9,20 +9,18 @@
 		</firmware>
 	</compatibility>
 	<dependencies>
-		<package>infostats2</package>
+		<package>InfoStats 2</package>
 	</dependencies>
 	<descriptionlist>
 		<description>Apply with LockHTML or XenHTML</description>
 	</descriptionlist>
 	<screenshots>
 		<screenshot>
-			<description>CX.LS 8 Preview</description>
+			<description>CX.LS 8 Screenshot Preview</description>
 			<image>image.png</image>
 		</screenshot>
 	</screenshots>
 	<changelog>
 		<change>Initial release</change>
-		<change></change>
-		<change></change>
 	</changelog>
 </package>
