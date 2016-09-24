@@ -1,0 +1,9 @@
+Architecture: iphoneos-arm
+Author: classicxii
+Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls8
+Description: Classicxii LS Widget
+Maintainer: classicxii <classicxii42@gmail.com>
+Name: CX.LS 8
+Package: com.classicxiirepo.cxls8
+Section: Lockscreen Widgets
+Version: 1.0

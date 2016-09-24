@@ -1,0 +1,17 @@
+
+(☞ﾟヮﾟ)☞  INSTALLATION
+
+Move this widget to this directory using ifile/filza or ifunbox (PC):
+
+/var/mobile/Library/lockhtml 
+/var/mobile/Library/groovylock
+
+Requires Infostats2 for this widget to work. 
+
+Credits:
+Original code belongs to Dacal and Junesiphone.
+Code modify by me Juan (@Classicxii).
+
+Contact info:
+Twitter: @classicxii
+Reddit: /u/classicxii
