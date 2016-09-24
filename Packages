@@ -3,11 +3,11 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls8_1.0_iphoneos-arm.deb
-Size: 63756
-MD5sum: 581e6743181b2891ad9ec8cadc0cf6b4
-SHA1: bb5034388edac41cfbbe2329c0dc7110c3e557df
-SHA256: 48e3acbcfb387362d842d797911fadc08bfc2a345caf59ffafb6c3592563652a
-Section: Lockscreen Widgets
+Size: 63758
+MD5sum: 8bc41a9c4f98c0a04155204bec0466cd
+SHA1: 8cdbb26a79d9853d1052635fbf9f6d675a754929
+SHA256: afb3dbdc9d9513187d9098447a6826ed506d0429ad73e6527b18b88de57e00e5
+Section: LS Widgets
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii
 Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls8
