@@ -1,27 +1,12 @@
-Package: com.classicxiirepo.classicxiiiWtest
-Version: 1.0
-Architecture: iphoneos-arm
-Maintainer: classicxii <classicxii42@gmail.com>
-Filename: ./debs/com.classicxiirepo.classicxiiiwtest_1.0_iphoneos-arm.deb
-Size: 432786
-MD5sum: 51778c0d1b65a705c3fc06e44af775be
-SHA1: faa13f79860f5313c0c343d6c6061edd744e92ad
-SHA256: 808c1892d11756daa594630fb10854e9abe8d24c8926324498183358ddd37d30
-Section: Lockscreen Widgets
-Description: classicxiiiW-Test
-Author: classicxii
-Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.classicxiiiWtest
-Name: classicxiiiWtest
-
 Package: com.classicxiirepo.cxls8
 Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls8_1.0_iphoneos-arm.deb
 Size: 63756
-MD5sum: fa8acec9a69dc90e1f4bab30129a8760
-SHA1: 8b780e2495f655f11e4d3d2d2a280376a4bdd71a
-SHA256: 1037b43a21901a32a16d1150420c52143b8bd8918b18e8ac03ed513493d69ae0
+MD5sum: a1830e03949e600c04db4a41b5e65f2e
+SHA1: 7fe1c3dbdf2db9c4141f906fd3e0921d87c7fac1
+SHA256: 3ecd3fe520c1962691422abd5d19c22ad819d6d1b8a66aac8403d8d6ed264cb3
 Section: Lockscreen Widgets
 Description: Classicxii LS Widget
 Author: classicxii
