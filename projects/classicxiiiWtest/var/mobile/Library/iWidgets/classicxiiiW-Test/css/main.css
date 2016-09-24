@@ -1,0 +1,142 @@
+
+	  html{
+	position:absolute;
+	margin:0px 0px;
+	padding: 0;
+	font-family: def;
+	color:white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	clip:rect(0px,260px,568px,0px);
+	
+    	   
+}
+
+
+@font-face {
+
+	font-family: def;
+
+	src: url(../Fonts/he.ttf);
+
+}
+
+@font-face {
+
+	font-family: def1;
+
+	src: url(../Fonts/em.otf);
+
+}  
+
+@font-face {
+
+	font-family: def2;
+
+	src: url(../Fonts/wtor.ttf);
+
+} 
+
+@font-face {
+
+	font-family: def3;
+
+	src: url(../Fonts/es.ttf);
+
+}
+
+#swash{
+position: absolute;
+width:260px;
+height:50px;
+top:82px;
+left: 65px;
+color:666666;
+font-family: def3;
+text-align:left;
+font-size:1.5em;
+z-index:2;
+text-shadow:none;
+display:;
+}
+
+#BatteryWrap{
+    position:absolute;
+    margin:0px 0px;
+}
+   
+#LevelDisplay{
+position: absolute;
+width:260px;
+height:50px;
+top:34px;
+left:-4px;
+font-family: def1;
+text-align:center;
+font-size:1em;
+z-index:2;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+display:none;
+}	 
+	
+#StateDisplay{
+display:none;
+position: absolute;
+width:260px;
+height:50px;
+top:97px;
+left: -14px;
+text-align:right;
+font-size:0.7em;
+color: rgba(188,173,124,1);
+display:none;
+}
+    
+#BatteryImage{
+position: absolute;
+top:15px;
+left:-7px;
+width:260px;
+height:320px;
+z-index:-3;
+display:none;
+}
+	  
+#Overlay{position:absolute; top:-5px; left:0px; width:260px; z-index:-3;}
+#Overlay1{position:absolute; top:-5px; left:0px; width:260px; z-index:-1;}
+	
+	
+#ClockWrap{
+position:absolute; text-align:left; top:50px; left:65px; width:260px; height:568px; font-family: def1; font-size:2.3em; color:666666; text-transform:uppercase;  text-shadow:none;z-index:2; 
+}
+#hour{}    
+#minute{}
+
+#tod{display:none}
+
+#today{
+      position:absolute; text-align:center; top:100px; left:0px; width:260px; height:568px; font-size:6.5em; text-transform:uppercase; z-index:-2; display:;
+}
+       
+#DateWrap{
+      position:absolute; text-align:center; top:193.5px; left:0px; width:260px; font-family: def2; height:568px; font-size:2.5em; text-transform:capitalise; z-index:-4; opacity:0.7; display:; 
+}
+
+#date{} 
+#month{}
+#year{}
+
+
+#WeatherWrap{
+    position:absolute; text-align:right; top:80px; left:-13px; width:260px; height:568px; font-family: def1; font-size:1.2em; text-transform:lowercase; z-index:3; display:none;
+}
+
+#temp{} 	 
+    
+#condition{display:none;}	
+
+#city{display:none;}
+   
+#icon{
+    position:absolute; top:40px; left:190px; width:50px; z-index:2; display:none;
+}
+    

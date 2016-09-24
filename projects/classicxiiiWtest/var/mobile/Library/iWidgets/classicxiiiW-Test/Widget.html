@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>dubbuuf2</title>
+
+ <!--Scripts JunesiPhone, mod Jeeepers7, mod dubs-->
+
+<meta name="viewport" content="width=device-
+width, minimum-scale=1, maximum-scale=1, 
+user-scalable=no"/>
+
+<script src="Config.js"></script> 
+
+<script src="js/Library/lang.js"></script> 
+
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+    
+</head>
+
+<body onload="init()">	
+
+
+<!--*** Start Overlays ***-->
+
+<img id="Overlay" src="Images/Overlay.png"/> 
+<img id="Overlay1" src="Images/Overlay1.png"/>	
+<!--*** End Overlays ***-->
+
+<div id="swash">a</div>
+ 
+      <!--*** Start Forecast + Weather Widget ***-->
+
+<script src="js/Library/Weather.js"></script> <!-- Library that pulls weather info NO-EDIT-->
+
+
+<!--Start Regular Weather Divs -->
+   
+   <div id="WeatherWrap"> 
+   <a id="city"></a> <a id="temp"></a> <a id="condition"></a>  
+   </div>
+    <img id="icon"/>
+
+   
+
+<!--End Regular Weather Divs-->
+
+<script src="js/WeatherMain.js"></script> <!-- Javascript where you define what elements you want to use for weather and/or forecast EDIT-THIS -->
+<!--*** END Forecast + Weather Widget ***-->
+
+    
+<!--*** Start Clock Widget ***-->
+<script src="js/Library/clock.js"></script> <!--Library that handles clock info NO-EDIT-->
+
+   
+    
+    <div id="ClockWrap">
+    <a id="hour"></a>.<a id="minute"></a>
+	<a id="tod"></a>
+	</div>
+ 
+    
+    <div id="today"></div> 
+    <div id="DateWrap">
+    <a id="date"></a> <a id="month"></a> <a id="year"></a>
+    
+	</div>
+
+       
+      
+<script src="js/clockMain.js"></script> <!-- Javascript where you define what clock elements you need EDIT-THIS-->
+    
+<!--END Clock Widget-->
+    
+  
+  <!--START Battery Widget-->
+    
+    <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+    
+<script type="text/javascript" charset="utf-8" src="js/Battery.js"></script>
+
+    
+    <div id="BatteryWrap">
+    <div id="LevelDisplay"></div>
+    <div id="StateDisplay"></div>
+<img id = "BatteryImage"/> 
+    </div>
+    
+     <!--END Battery Widget-->
+	
+
+</body>
+</html>
+
