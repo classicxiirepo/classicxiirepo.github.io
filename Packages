@@ -1,15 +1,15 @@
 Package: com.classicxiirepo.cxls8
 Version: 1.0
 Architecture: iphoneos-arm
-Maintainer: classicxii <classicxii42@gmail.com>
+Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls8_1.0_iphoneos-arm.deb
 Size: 63756
-MD5sum: a1830e03949e600c04db4a41b5e65f2e
-SHA1: 7fe1c3dbdf2db9c4141f906fd3e0921d87c7fac1
-SHA256: 3ecd3fe520c1962691422abd5d19c22ad819d6d1b8a66aac8403d8d6ed264cb3
+MD5sum: 581e6743181b2891ad9ec8cadc0cf6b4
+SHA1: bb5034388edac41cfbbe2329c0dc7110c3e557df
+SHA256: 48e3acbcfb387362d842d797911fadc08bfc2a345caf59ffafb6c3592563652a
 Section: Lockscreen Widgets
-Description: Classicxii LS Widget
-Author: classicxii
+Description: Classicxii's Lockscreen Widget
+Author: Classicxii
 Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls8
 Name: CX.LS 8
 
