@@ -1,0 +1,43 @@
+body {
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-transform:capitalize;
+      color:black;
+      letter-spacing:1;
+      font-family:Shrimp;
+}
+@font-face{
+      font-family:Shrimp;
+      src:url(Fonts/Shrimp.ttf);
+}
+#Clock{
+position:absolute; top:7.75%; left:78.3%; width:15%; text-align:center; z-index:50; font-size:13vw; opacity:0.9; line-height:35px; font-style:italic; color:white;
+}
+#Cal{
+position:absolute; top:22%; left:78%; text-align:center; z-index:50; font-size:3vw; line-height:15px; opacity:0.8; width:17%;
+}
+#txt{
+position:absolute; top:24%; left:80.5%; text-align:center; z-index:50; font-size:3vw;  line-height:15px; opacity:0.8;
+}
+#txt2{
+position:absolute; top:24%; left:85%; text-align:center; z-index:50; font-size:3vw; line-height:15px; opacity:0.8; 
+}
+#txt3{
+position:absolute; top:24%; left:89.5%; text-align:center; z-index:50; font-size:3vw; opacity:0.8; line-height:15px; 
+}
+#Batt{
+position:absolute; top:80%; left:0%; width:100%; text-align:center; z-index:50; font-size:6vw; opacity:0.8;
+}
+#LevelDisplay{
+font-size:16vw; font-style:italic; 
+}
+#Percent{
+position:absolute; top:81%; left:35%; font-size:4.5vw; font-style:italic; opacity:0.8;
+}
+#Box{
+position:absolute; top:0%; left:78%; width:17%; height:21%; z-index:10; background-color:black; box-shadow:0px 0px 4px rgba(0,0,0, 0.8); opacity:0.9;
+}
+#Box2{
+position:absolute; top:5%; left:79%; width:14.5%; height:15%; z-index:10; border:1px solid white; opacity:0.9;
+}

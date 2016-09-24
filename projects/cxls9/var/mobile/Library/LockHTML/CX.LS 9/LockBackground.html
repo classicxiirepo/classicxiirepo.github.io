@@ -1,0 +1,72 @@
+<html>
+<head>
+
+<title>CX.LS 9 by @Classicxii</title>
+
+<link rel="stylesheet" href="Style.css" type="text/css" media="screen" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" charset="utf-8" src="Config.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/Clock.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/Lang.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+</head>
+
+<body onload="init()">
+
+<div id="Clock">
+<a id="hour"></a><br><a id="minute"></a>
+</div>
+
+<div id="Batt">
+<a id="LevelDisplay">10</a> バッテリレベル
+</div>
+
+<div id="Percent">%</div> 
+
+<div id="Cal">
+<a id="month"></a> <a id="date"></a> <a id="weekday"></a>
+</div>
+
+<div id="txt">
+•<br>月
+</div>
+
+<div id="txt2">
+•<br>日<br>付
+</div>
+
+<div id="txt3">
+•<br>平<br>日
+</div>
+
+<div id="Box"></div>
+<div id="Box2"></div>
+
+<script type="text/cycript">
+    var getBattery = function() {return [IS2System batteryPercent]; };
+}
+</script>
+
+<script>
+    (function writeDiv(){
+     	document.getElementById('LevelDisplay').textContent = getBattery();
+     	setTimeout(writeDiv, 10000);
+    }());
+</script>
+
+<script type="text/cycript">
+
+if(disableBattery){
+
+document.getElementById("Batt").style.display = "none";
+document.getElementById("Percent").style.display = "none";
+}
+</script>
+
+</body>
+</html>

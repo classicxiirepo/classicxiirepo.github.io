@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>default</key>
+		<string>12h</string>
+		<key>label</key>
+		<string>Clock Format</string>
+		<key>name</key>
+		<string>Clock</string>
+		<key>options</key>
+		<dict>
+			<key>12h</key>
+			<string>12h</string>
+			<key>24h</key>
+			<string>24h</string>
+		</dict>
+		<key>type</key>
+		<string>select</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>English</string>
+		<key>label</key>
+		<string>Language</string>
+		<key>name</key>
+		<string>Lang</string>
+		<key>options</key>
+		<dict>
+			<key>Chinese (Simplified)</key>
+			<string>zh</string>
+			<key>Czech</key>
+			<string>cz</string>
+			<key>Dutch</key>
+			<string>nl</string>
+			<key>English</key>
+			<string>en</string>
+			<key>French</key>
+			<string>fr</string>
+			<key>German</key>
+			<string>de</string>
+			<key>Hebrew</key>
+			<string>he</string>
+			<key>Italian</key>
+			<string>it</string>
+			<key>Polish</key>
+			<string>pl</string>
+			<key>Portuguese</key>
+			<string>pt</string>
+			<key>Russian</key>
+			<string>ru</string>
+			<key>Spanish</key>
+			<string>sp</string>
+		</dict>
+		<key>type</key>
+		<string>select</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<false/>
+		<key>label</key>
+		<string>Disable Battery</string>
+		<key>name</key>
+		<string>disableBattery</string>
+		<key>type</key>
+		<string>switch</string>
+	</dict>
+</array>
+</plist>

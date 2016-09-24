@@ -1,0 +1,6 @@
+/*
+Configuration here !
+*/
+
+var Clock = "12h"; // 12h or 24h
+var Lang = "en";  // "en", "fr", "de", "sp", "cz", "nl", "zh", "it", "ru"
