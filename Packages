@@ -3,14 +3,14 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls5_1.0_iphoneos-arm.deb
-Size: 31680
-MD5sum: c632e492a1fc0e539a7905c0140adbc2
-SHA1: beb6039d6d9ff8af53e712884621ff3c87d53838
-SHA256: 3553860245d9538e3e94a075b9a2ee1e907f89cfb5a39dad1fe4c2fefac801e6
+Size: 31674
+MD5sum: f6fecada8e080719bd14f03cab8e5989
+SHA1: d8ea4b1a33af0e92c962d829ca5ea2fe23cb79f3
+SHA256: 756c439876b9cb8c8e38909e80d82cd4180012aca61714e705af18569cbff9bf
 Section: LS Widgets
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii
-Depiction: https://classicxiirepo.github.io/depictions/LS.Widgets/?p=com.classicxiirepo.cxls5
+Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls5
 Name: CX.LS 5
 
 Package: com.classicxiirepo.cxls6
@@ -18,14 +18,14 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls6_1.0_iphoneos-arm.deb
-Size: 85270
-MD5sum: 0305eb036d937664d4bdf2fee5e093aa
-SHA1: 4fd914a25ee01291725e5f9d55c33e850e72f399
-SHA256: 61ac0e693254d393c6cff08353cb8295198d9adf681e49a4b135cc737d02c5f5
+Size: 85266
+MD5sum: 27370bf3467bad7e5197aa4fee6d28c4
+SHA1: ddbaf4308f32ec6064fdecb3312bb7bc42de51ad
+SHA256: 01c7037453432947cc704db0bb12b537961a44d2f05ca14d76736161d77d4496
 Section: LS Widgets
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii
-Depiction: https://classicxiirepo.github.io/depictions/LS.Widgets/?p=com.classicxiirepo.cxls6
+Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls6
 Name: CX.LS 6
 
 Package: com.classicxiirepo.cxls7
@@ -33,14 +33,14 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls7_1.0_iphoneos-arm.deb
-Size: 66146
-MD5sum: 44f794804c9424fe8bf2725fecf03d42
-SHA1: 0c8f1aa5ef20eb1229da63662b113cdba5d4f90b
-SHA256: 861434819d73a8c05f1f3b81c428d54a03a346a880f0f84f01eeb42f2603dce1
+Size: 66140
+MD5sum: f0582ac0cab28901a3aa8dc565cc6c78
+SHA1: 36a7503140789a8d3b777c47f9276b6e92628e5a
+SHA256: cb9d9ca130e32d195935de8672d96d62570bb9821550a6ab9a12e8ff24122b90
 Section: LS Widgets
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii
-Depiction: https://classicxiirepo.github.io/depictions/LS.Widgets/?p=com.classicxiirepo.cxls7
+Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls7
 Name: CX.LS 7
 
 Package: com.classicxiirepo.cxls8
@@ -48,14 +48,14 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls8_1.0_iphoneos-arm.deb
-Size: 63766
-MD5sum: 7a33496a828fa02ac4eec36351a7ac72
-SHA1: 1566a1497bedd60ee8f2e471d9868369a65bf053
-SHA256: 3abbcc1abcaaa47431323ac867cbc7ab1780907f2c2af525334c39a81d58f9eb
+Size: 63758
+MD5sum: 2fe4d40eed1b0643c9ebb0c5d5748bfa
+SHA1: a7ea22fbf1e120c0adc4477948b4a81193c0a3fb
+SHA256: 92f18436655499173cebb5b63a315561d2550f0c85681c75e79bff24629d421c
 Section: LS Widgets
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii
-Depiction: https://classicxiirepo.github.io/depictions/LS.Widgets/?p=com.classicxiirepo.cxls8
+Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls8
 Name: CX.LS 8
 
 Package: com.classicxiirepo.cxls9
@@ -63,13 +63,13 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls9_1.0_iphoneos-arm.deb
-Size: 65614
-MD5sum: 96532220ec0b0ac08868c70f23354262
-SHA1: 5898aa5bf56d2df1cc6fa452a12b681e6cc8321c
-SHA256: 9419a7dbe2c32844025f191620a7a0809438b763f3057dc39463d76d4b39f7ab
+Size: 65608
+MD5sum: 79614b832004d0521325491736cede91
+SHA1: 3f429aa5a2f294c5742084036ea51a76be688b66
+SHA256: 5a90f726dab375b91c4c73e9fbb2c8e47ee7457e7544e57fe400abc46a9fa501
 Section: LS Widgets
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii
-Depiction: https://classicxiirepo.github.io/depictions/LS.Widgets/?p=com.classicxiirepo.cxls9
+Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls9
 Name: CX.LS 9
 
