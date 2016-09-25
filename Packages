@@ -1,31 +1,13 @@
-Package: com.classicxiirepo.CXRepoIcons
-Version: 1.0
-Architecture: iphoneos-arm
-Essential: yes
-Maintainer:  Classicxii  <classicxii42@gmail.com>
-Filename: ./debs/com.classicxiirepo.cxrepoicons_1.0_iphoneos-arm.deb
-Size: 14038
-MD5sum: 1834a58ad8a093dafe28c0044ab29c6c
-SHA1: 09117035d5975d0e278328df68ed9231fa511983
-SHA256: cb0a3b8bc9805b616442ddf447c722084265cde93784237faa45feb94ffe22ca
-Section: System
-Priority: required
-Description: Adds setup files, icons and sources to the repo
-Author:  Classicxii 
-Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.CXRepoIcons
-Name: CXRepoIcons
-Sponsor: http://classicxiirepo.github.io/
-
 Package: com.classicxiirepo.cxls5
 Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls5_1.0_iphoneos-arm.deb
-Size: 31674
-MD5sum: 8302f4c0c625af4adb48400bd8a64b79
-SHA1: b0240e24456842efb2492fa96d87804fd19f2fe4
-SHA256: 285ed2908ad1e2650577d6955f71541745314712ff3c9359336e80d9026b7828
-Section: LS Widgets
+Size: 31680
+MD5sum: 6d545832bee26409f5de2a8c7b610480
+SHA1: 307e47fa5e5bca8fc30d736b2ce1e64f102baab5
+SHA256: b0d8580d81ef29a5a0e3f736cbaf72986455280e4ec70ef57f615c81a6389ea9
+Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii
 Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls5
@@ -36,11 +18,11 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls6_1.0_iphoneos-arm.deb
-Size: 85266
-MD5sum: 864fb8c1e25eb50260efbf1c4aa98efe
-SHA1: 80d2a6d0e4e616f3cc2104baa42cfc2728039e8e
-SHA256: dd727a9b4ba808e868a2594bb4077422cfdf1d0500f328f056780785ba46f903
-Section: LS Widgets
+Size: 85270
+MD5sum: 6c4b98e48736e5deaa93acd589276cc6
+SHA1: 4736a10ccf07c26461ad7563a206c140e0e39b80
+SHA256: 6c484890aa00993647a55152655e91a660a9a481f0ed046ac3b502bb316fb33e
+Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii
 Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls6
@@ -51,11 +33,11 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls7_1.0_iphoneos-arm.deb
-Size: 66140
-MD5sum: e613deaa94714c57a4604a360b501a3d
-SHA1: a7082e96fe06b3e4ce4acad8f9c5b4d130ecb984
-SHA256: 61e416dbb5f80bdb84b292c829cf943da8afa48b149c60e3244a4cbba8d83a26
-Section: LS Widgets
+Size: 66146
+MD5sum: 5968d91f07f6075c205b7aa327d5dbe8
+SHA1: 0d0ddad26265d4b06835d15820c067da149eec19
+SHA256: 723ef3733528ec622eaa541b64cfba1c8de3290e4c47fb1b52224d3147ec0d09
+Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii
 Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls7
@@ -66,11 +48,11 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls8_1.0_iphoneos-arm.deb
-Size: 63758
-MD5sum: 1c1df43f25b5b3989a76dcb0240bac34
-SHA1: a2816282e648c4c1da5b03582db613657b142273
-SHA256: 568b7f86a01ca2055a36f33c63cff993a9787b58d703ddd1949ff4bd0431237a
-Section: LS Widgets
+Size: 63764
+MD5sum: f73f243af345291c86c1c5d62c8380f0
+SHA1: f35c5978b2a62bbaac14e44ce712a158375e10b6
+SHA256: 3e30caf34a6f8b275fb9c43462df46043219b8f97e8f825c4ab6c73d10bbccd5
+Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii
 Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls8
@@ -81,11 +63,11 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls9_1.0_iphoneos-arm.deb
-Size: 65608
-MD5sum: 857ca4539e824da8af4e6c9b061da317
-SHA1: f52c231a40ee58d78403df4165a99d999f7af3fa
-SHA256: 17e4c9aeb4d5ec53adb0882adbafd966d72c31552842220b5e45dd35ebda57d1
-Section: LS Widgets
+Size: 65614
+MD5sum: efd7efeb3bbdf48d449a6c7d020c7cc8
+SHA1: 60190ce1ce4beea837a5684b3ba3cec0d61f03f5
+SHA256: 134f2c6eb7af676a5f498c44aad4cebeb169e43fb691491b252f8a061b88d358
+Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii
 Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls9
