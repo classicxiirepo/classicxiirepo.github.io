@@ -1,19 +1,19 @@
 <repo>
-	<footerlinks>
-		<link>
-			<name>Follow me on twitter</name>
-			<url>https://twitter.com/Classicxii</url>
-			<iconclass>glyphicon glyphicon-thumbs-up</iconclass>
-		</link>
-    <link>
-			<name>Buy me a cup of coffee</name>
-			<url>https://www.paypal.me/classicxii</url>
-			<iconclass>glyphicon glyphicon-thumbs-up</iconclass>
-		</link>
-    <link>
-			<name>Want a repo just like this?</name>
-			<url>http://nsbm0d.github.io/NsBm0d/</url>
-			<iconclass>glyphicon glyphicon-thumbs-up</iconclass>
-		</link>
-	</footerlinks>
+ <footerlinks>
+ 	<link>
+    <name>Follow me on twitter</name>
+		<url>https://twitter.com/Classicxii</url>
+		<iconclass>glyphicon glyphicon-thumbs-up</iconclass>
+  </link>
+  <link>
+    <name>Buy me a cup of coffee</name>
+    <url>https://www.paypal.me/classicxii</url>
+		<iconclass>glyphicon glyphicon-thumbs-up</iconclass>
+  </link>
+  <link>
+		<name>Want a repo just like this?</name>
+    <url>http://nsbm0d.github.io/NsBm0d/</url>
+		<iconclass>glyphicon glyphicon-thumbs-up</iconclass>
+  </link>
+ </footerlinks>
 </repo>
