@@ -12,7 +12,8 @@
 		<package>InfoStats 2</package>
 	</dependencies>
 	<descriptionlist>
-		<description>Installed to the LockHTML directory: /var/mobile/Library/LockHTML                 Apply with LockHTML,XenHTML or GroovyLock</description>
+		<description><![CDATA[Installed to the LockHTML directory: /var/mobile/Library/LockHTML <br />
+                           Apply with LockHTML, XenHTML or GroovyLock]]></description>
 	</descriptionlist>
 	<screenshots>
 		<screenshot>
