@@ -1,0 +1,12 @@
+Package: com.classicxiirepo.CXRepoIcons
+Name: CXRepoIcons
+Architecture: iphoneos-arm
+Section: System
+Author:  Classicxii 
+Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.CXRepoIcons
+Description: Adds setup files, icons and sources to the repo
+Maintainer:  Classicxii  <classicxii42@gmail.com>
+Sponsor: http://classicxiirepo.github.io/
+Essential: yes
+Priority: required
+Version: 1.0
