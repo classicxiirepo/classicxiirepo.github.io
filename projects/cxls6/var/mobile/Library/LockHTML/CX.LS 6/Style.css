@@ -1,0 +1,20 @@
+body {
+	font-weight:100;
+       text-transform:capitalize;
+       color:white;
+       text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+       font-size:3vw;
+       font-style: italic;
+       font-family:Light;
+	 letter-spacing:2;
+}
+@font-face{
+      font-family:Light;
+      src:url(Fonts/Light.ttf);
+}
+#Container{
+       position:absolute; top:37%; left:0%; width:100%; text-align:center; 
+}
+#Dots{
+position:absolute; top:41%; left:0%; width:100%; text-align:center; font-weigth:bold; letter-spacing: 10;
+}

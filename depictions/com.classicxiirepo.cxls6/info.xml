@@ -1,0 +1,26 @@
+<package>
+	<id>com.classicxiirepo.cxls6</id>
+	<name>CX.LS 6</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>7.0</miniOS>
+      <maxiOS>9.3.3+</maxiOS>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>InfoStats 2</package>
+	</dependencies>
+	<descriptionlist>
+		<description>Apply with LockHTML or XenHTML</description>
+	</descriptionlist>
+	<screenshots>
+		<screenshot>
+			<description>CX.LS 6 Screenshot Preview</description>
+			<image>image.png</image>
+		</screenshot>
+	</screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+</package>
