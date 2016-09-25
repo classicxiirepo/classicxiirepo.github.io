@@ -1,0 +1,24 @@
+body{
+	text-transform:uppercase;
+      color:white; 
+}
+@font-face {
+	font-family:Heavitas;
+	src: url(Images/Heavitas.ttf;)
+}
+@font-face {
+	font-family:GeosansLight;
+	src: url(Images/GeosansLight.ttf;)
+}
+#Box{
+       position:absolute; top:40%; left:15%; height:4.5%; width:70%; background-color:eeeeee; box-shadow:0px 0px 3px rgba(0,0,0, 0.3); z-index:0; -webkit-border-radius:2;     
+}
+#Weather{
+position:absolute;	top:41.5%; left:20%; width:60%; text-align:center; z-index:10; font-size:3vw; color: black; font-family:Heavitas; opacity:0.6; letter-spacing:3.5px;
+}
+#weekday{
+	position:absolute; top:33.5%; left:0%; width:100%; text-align:center; z-index:0; font-size:13vw; font-family: Heavitas; letter-spacing:-1px; opacity:0.6;
+}
+#CD{
+	position:absolute; top:46%; left:0%; width:100%; text-align:center; z-index:3; font-size:3vw; font-family: GeosansLight; letter-spacing:4px; text-shadow:1px 1px 1px rgba(0,0,0,0.3); line-height:8vw; font-weight:900; opacity:0.9;
+}

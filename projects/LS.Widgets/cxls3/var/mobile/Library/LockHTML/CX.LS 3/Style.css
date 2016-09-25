@@ -1,0 +1,34 @@
+body {
+      font-family:bikoregular;
+      text-transform:capitalize;
+      color:black;
+      font-weight:100;
+      font-size:2.6vw;
+      letter-spacing:0.5;
+}
+@font-face{
+      font-family:bikoregular;
+      src:url(Fonts/bikoregular.otf);
+}
+@font-face{
+      font-family:alpine;
+      src:url(Fonts/alpine.otf);
+}
+#S{
+       position:absolute; top:60.5%; left:0%; height:14.5%; width:100%; background-color:#eeeeee; border: solid 0px #FFFFFF; box-shadow:0px 0px 4px rgba(0,0,0, 0.8); opacity:0.9; z-index:-2;
+}
+#L{
+       position:absolute; top:68.5%; left:12.5%; height:0.1%; width:75%; background-color:black; opacity:0.9; z-index:1;
+}
+#Clock{
+        position:absolute; top:63%; left:0%; width:100%; text-align:center; z-index:3; opacity:0.7; font-size:5.5vw; letter-spacing:3; font-family:alpine;
+}
+#Calendar{
+        position:absolute; top:70.5%; left:0%; width:100%; text-align:center; z-index:3; opacity:0.7;
+}
+#temp{
+        position:absolute; top:70.5%; left:10.5%; width:75%; text-align:right; z-index:3; opacity:0.7;
+}
+#battery{
+        position:absolute; top:70.5%; left:14.5%; width:75%; text-align:left; z-index:3; opacity:0.7;
+}

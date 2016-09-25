@@ -1,3 +1,7 @@
+dpkg-deb -bZgzip projects/LS.Widgets/cxls1 debs
+dpkg-deb -bZgzip projects/LS.Widgets/cxls2 debs
+dpkg-deb -bZgzip projects/LS.Widgets/cxls3 debs
+dpkg-deb -bZgzip projects/LS.Widgets/cxls4 debs
 dpkg-deb -bZgzip projects/LS.Widgets/cxls5 debs
 dpkg-deb -bZgzip projects/LS.Widgets/cxls6 debs
 dpkg-deb -bZgzip projects/LS.Widgets/cxls7 debs

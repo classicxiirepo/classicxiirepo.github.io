@@ -1,0 +1,32 @@
+body{
+	margin:0;
+	padding:0;
+	font-weight:100;
+      color:white;
+      font-size:3vw;
+      font-family:Regular;
+	text-transform:uppercase;
+	letter-spacing:3;
+}
+@font-face{
+	font-family:Regular;
+	src:url(Fonts/Regular.ttf);
+}
+@font-face{
+	font-family:Heavitas;
+	src:url(Fonts/Heavitas.ttf);
+}
+#clock{
+       position:absolute; top:50%; left:0%; width:100%; text-align:center; z-index:50; opacity:0.8; text-shadow:1px 1px 1px rgba(0,0,0, 0.2);
+}
+#Calendar{
+       position:absolute; top:54%; left:0%; width:100%; text-align:center; z-index:0; opacity:0.8; text-shadow:1px 1px 1px rgba(0,0,0, 0.2);
+}
+#day{ 
+position:absolute; top:25.5%; left:0%; width:100%; z-index:2; font-family: Heavitas; color: black; opacity:0.6; text-align:center; font-size:25vw;
+}
+#Circle{
+       position:absolute; top:16%; left:25%; width:50%; height:28%; z-index:0;
+-moz-border-radius: 50%; -webkit-border-radius: 100%; background-color: eeeeee; opacity:0.8; 
+}
+

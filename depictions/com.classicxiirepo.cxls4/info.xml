@@ -1,0 +1,29 @@
+<package>
+	<id>com.classicxiirepo.cxls4</id>
+	<name>CX.LS 4</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>7.0</miniOS>
+      <maxiOS>9.3.3+</maxiOS>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>InfoStats 2</package>
+	</dependencies>
+	<descriptionlist>
+		<description><![CDATA[Installed to the LockHTML directory: /var/mobile/Library/LockHTML <br /> <br />
+                          If you are using GroovyLock, move the widget folder from LockHTML directory to: /var/mobile/Library/Groovylock <br /> <br />
+                          Apply with LockHTML, XenHTML or GroovyLock <br /> <br />
+                          If you have any further questions, feel free to contact me on twitter (@Classicxii), or send me an email at classicxii42@gmail.com ]]></description>
+	</descriptionlist>
+	<screenshots>
+		<screenshot>
+			<description>CX.LS 4 Screenshot Preview</description>
+			<image>image.png</image>
+		</screenshot>
+	</screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+</package>
