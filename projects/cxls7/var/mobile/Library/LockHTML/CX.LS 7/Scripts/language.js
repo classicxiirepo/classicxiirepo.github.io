@@ -1,0 +1,30 @@
+if (Lang == "en"){
+	var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	var date=['00','One','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty','twenty-one','twenty-two','twenty-three','twenty-four','twenty-five','twenty-six','twenty-seven','twenty-eight','twenty-nine','thirty','thirty-one'];
+	var months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+}
+if (Lang == "ca"){
+	var days = ["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"];
+	var date=['00','uno','dos','tres','cuatro','cinco','seis','siete','ocho','nueve','diez','once','doce','trece','catorce','quince','dieciseis','diecisiete','dieciocho','diecinueve','veinte','veintiuno','veintidos','veintitres','veinticuatro','veinticinco','veinitiseis','veintisiete','veintiocho','veintinueve','treinta','treinta y uno'];
+	var months=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+}
+if (Lang == "fr"){
+	var days = ["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+    var date=['00','Un','deux','trois','quatre','cinq', "esix", "esincluso",'huit','neuf','dix','onze','douze','treize','quatorze','quinze', "seize", 'dix-sept','dix-huit','dix-neuf','vingt','vingt et un','vingt-deux','vingt-trois','vingt-quatre','vingt-cinq','vingt-six','vingt-sept','vingt-huit','vingt-neuf','trente','trente et un'];
+	var months=['Janvier','Fevrier','Mars','Avril','Mai','Juin','Juillet','Aout','Septembre','Octobre','Novembre','Decembre'];
+}
+if (Lang == "ca"){
+   var currentHours_name_array = new Array ("doce", "una", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce", "una", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce")
+   var currentMinutes_name_array = new Array ("en punto", "y", "y", "y", "y", "y", "y", "y", "y", "y", "y diez", "y once", "y doce", "y trece", "y catorce", "y quince", "y dieciseis", "y diecisiete", "y dieciocho", "y diecinueve", "y veinte", "veinti", "veinti", "veinti", "veinti", "veinti", "veinti", "veinti", "veinti", "veinti", "y treinta", "treinta", "treinta", "treinta", "treinta", "treinta", "treinta", "treinta", "treinta", "treinta", "cuarenta", "y cuarenta", "cuarenta", "cuarenta", "cuarenta", "cuarenta", "cuarenta", "cuarenta", "cuarenta", "cuarenta", "y cincuenta", "cincuenta", "cincuenta", "cincuenta", "cincuenta", "cincuenta", "cincuenta", "cincuenta", "cincuenta", "cincuenta", "")
+   var currentMinutesunit_name_array = new Array ("", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", " ", "y uno", "y dos", "y tres", "y cuatro", "y cinco", "y seis", "y siete", "y ocho", "y nueve", " ", "y uno", "y dos", "y tres", "y cuatro", "y cinco", "y seis", "y siete", "y ocho", "y nueve", " ", "y uno", "y dos", "y tres", "y cuatro", "y cinco", "y seis", "y siete", "y ocho", "y nueve", "")
+}
+if (Lang == "en"){
+   var currentHours_name_array = new Array ("Twelve", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve")
+   var currentMinutes_name_array = new Array ("O'", "O'", "O'", "O'", "O'", "O'", "O'", "O'", "O'", "O'", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "Sixteen", "Seventeen", "eighteen", "Nineteen", "Twenty", "Twenty", "Twenty", "Twenty", "Twenty", "Twenty", "Twenty", "Twenty", "Twenty", "Twenty", "Thirty", "Thirty", "Thirty", "Thirty", "Thirty", "Thirty", "Thirty", "Thirty", "Thirty", "Thirty", "Forty", "Forty", "Forty", "Forty", "Forty", "Forty", "Forty", "Forty", "Forty", "Forty", "Fifty", "Fifty", "Fifty", "Fifty", "Fifty", "Fifty", "Fifty", "Fifty", "Fifty", "Fifty", "")
+   var currentMinutesunit_name_array = new Array ("clock", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "", "", "", "", "", "", "", "", "", "", "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "")
+}
+if (Lang == "fr"){
+   var currentHours_name_array = new Array ("minuit", "une", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix", "onze", "midi", "une", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix", "onze", "minuit")
+   var currentMinutes_name_array = new Array ("et", "et", "et", "et", "et", "et", "et", "et", "et", "et", "dix", "onze", "douze", "treize", "quatorze", "quinze", "seize", "dix-sept", "dix-huit", "dix-neuf", "vingt", "vingt", "vingt", "vingt", "vingt", "vingt", "vingt", "vingt", "vingt", "vingt", "trente", "trente", "trente", "trente", "trente", "trente", "trente", "trente", "trente", "trente", "quarante", "quarante", "quarante", "quarante", "quarante", "quarante", "quarante", "quarante", "quarante", "quarante", "cinquante", "cinquante", "cinquante", "cinquante", "cinquante", "cinquante", "cinquante", "cinquante", "cinquante", "cinquante", "")
+   var currentMinutesunit_name_array = new Array ("heure", "une", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", "une", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", " ", "une", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", " ", "une", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", " ", "une", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "")
+}
