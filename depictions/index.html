@@ -20,6 +20,9 @@
  		max-height: 300px;
     	text-align:center;
     }
+    #repoFooterLinks{
+    	text-align:left;
+    }
   </style>
   <script type="text/javascript">
 
@@ -227,7 +230,7 @@
 			{"type":"custom"
 				,"source":"repo>footerlinks>link"
 				,"render":function(element,source) {
-					$.each(source, function(data) {
+					$.each(source, function(index,data) {
 						var p = $("<li class='list-group-item'>");
 						var a = $("<a class='btn btn-link'>");
 						a.attr("href",$(data).find('url').text());
