@@ -31,9 +31,6 @@
 					}
 					$.each(source, function(index,data) {
 						var th = $("<div class='thumbnail'>");
-						th.append($("<p>")
-							.text($(data).find('description').text())
-						)
 						th.append($("<img>")
 							.attr("src",bundleid+'/screenshots/'+$(data).find('image').text())
 						)
