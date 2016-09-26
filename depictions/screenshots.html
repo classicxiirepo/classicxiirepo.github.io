@@ -81,58 +81,5 @@
 	  </div>
 	</div>
 </div>
-<!-- REPO FOOTER ----------------------------------------------------------- -->
-<script type="text/javascript">
-    var repoContents = 	{
-		"#repoFooterLinks" :
-			{"type":"custom"
-				,"source":"repo>footerlinks>link"
-				,"render":function(element,source) {
-					$.each(source, function(index,data) {
-						var p = $("<li class='list-group-item'>");
-						var a = $("<a class='btn btn-link'>");
-						a.attr("href",$(data).find('url').text());
-						if ($(data).find('iconclass')) {
-							var i =  $("<span>")
-							i.attr("class",$(data).find('iconclass').text());
-							console.log(i);
-							$(a).append(i);
-						}
-						$(a).append(' '+$(data).find('name').text());
-						$(p).append(a)
-						$(element).append(p);
-					}); //each
-				} //render
-			}
-	}
-    $( document ).ready(function() {
-        $.ajax({type: "GET", dataType: "xml",url : ("../repo.xml"),cache: false,
-            success : function(xml){
-				data_loader_engine(repoContents,xml);
-				if (navigator.userAgent.search(/Cydia/) != -1) {
-					$("a").each(function() {
-						console.log($(this).text());
-						$(this).attr("target","_blank");
-					});
-				}
-			},
-            error: function() {$("#contactInfo").hide()}
-        }); //ajax
-
-
-    }); // ready
-
-</script>
-
-<div id="contactInfo">
-	<div class="container">
-	<div class="panel panel-default">
-	<div class="panel-heading">LINKS</div>
-		<ul class="list-group" id="repoFooterLinks">
-		</ul>
-	</div>
-</div>
-<!-- REPO FOOTER ENDS ------------------------------------------------------ -->
-
 </body>
 </html>
