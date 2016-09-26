@@ -20,9 +20,6 @@
  		max-height: 300px;
     	text-align:center;
     }
-    #repoFooterLinks{
-    	text-align:left;
-    }
   </style>
   <script type="text/javascript">
 
@@ -184,8 +181,9 @@
 	<div class="panel-heading">UPCOMING UPDATE <span class="badge" />2.0</span></div>
 		<ul class="list-group">
 			<li class="list-group-item" />
-			<p>Adding InfoStats 2 Weather Support and i will be dropping the old method(Weather Code).</p>
-			<p>Will also drop "config.js" file and i will add "Options.plist" file instead with some added features!</p>
+			<p>This applies to all of my widgets.</p>
+			<p>I will be adding InfoStats 2 Weather Support and will be dropping the old method(Weather Code).</p>
+			<p>Will also drop "Config.js" file and i will add "Options.plist" file instead with some added features!</p>
 			</li>
 			</ul>
 		</div>
@@ -231,7 +229,7 @@
 				,"source":"repo>footerlinks>link"
 				,"render":function(element,source) {
 					$.each(source, function(index,data) {
-						var p = $("<li class='list-group-item list-group-item-info'>");
+						var p = $("<li class='list-group-item'>");
 						var a = $("<a class='btn btn-link'>");
 						a.attr("href",$(data).find('url').text());
 						if ($(data).find('iconclass')) {
