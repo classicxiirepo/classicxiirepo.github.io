@@ -227,7 +227,7 @@
 			{"type":"custom"
 				,"source":"repo>footerlinks>link"
 				,"render":function(element,source) {
-					$.each(source, function(index,data) {
+					$.each(source, function(data) {
 						var p = $("<li class='list-group-item'>");
 						var a = $("<a class='btn btn-link'>");
 						a.attr("href",$(data).find('url').text());
