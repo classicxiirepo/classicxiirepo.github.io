@@ -1,10 +1,7 @@
 <changelog>
 	<changes>
+		<text>VERSION:</text>
 		<version>1.0</version>
 		<change>Initial Release</change>
-	</changes>
-	<changes>
-		<version>2.0</version>
-		<change>Release</change>
 	</changes>
 </changelog>
