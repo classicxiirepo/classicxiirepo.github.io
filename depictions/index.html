@@ -231,7 +231,7 @@
 				,"source":"repo>footerlinks>link"
 				,"render":function(element,source) {
 					$.each(source, function(index,data) {
-						var p = $("<li class='list-group-item'>");
+						var p = $("<li class='list-group-item list-group-item-info'>");
 						var a = $("<a class='btn btn-link'>");
 						a.attr("href",$(data).find('url').text());
 						if ($(data).find('iconclass')) {
