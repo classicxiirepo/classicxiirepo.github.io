@@ -3,34 +3,64 @@
 
 <title>CX.LS 3 by @Classicxii</title>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
 <link rel="stylesheet" href="Style.css" type="text/css" media="screen" />
-
-<script type="text/javascript" charset="utf-8" src="Config.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Weather.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Clock.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Languages.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Battery.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
 
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 
-<body onload="init()">
+<body onload="InfoStats.init()" onunload= "InfoStats.unload()">
 
-<div id="Clock">
-<a id="hour"></a>&nbsp;<a id="minute"></a>&nbsp;<a id="minutesunit"></a>
-</div>
-
-<div id="temp"></div>
-<div id="battery"></div> 
-
-<div id="Calendar">
-<a id="day"></a> <a id="date"></a> <a id="month"></a>
-</div>
-
+<div id="Clock">two fourteen</div>
+<div id="temp">56&deg;c</div>
+<div id="battery">72%</div> 
+<div id="Calendar">tue 23 feb</div>
 <div id="L"></div>
 <div id="S"></div>
 
+    <script type="text/javascript" src="Scripts/clock.js"></script>
+    <script type="text/javascript" src="Scripts/lang.js"></script>
+    <script type="text/javascript">
+        clock({
+          twentyfour : twentyfour,
+          padzero : false,
+          refresh : 5000,
+          success: function(clock){
+document.getElementById('Clock').innerHTML = clock.hourtext() + " " + clock.minuteonetext() + " " + clock.minutetwotext();
+
+document.getElementById('Calendar').innerHTML = translate[current].sday[clock.day()] + " " + clock.date() + " " + translate[current].smonth[clock.month()];
+          }
+        });
+    </script>
+
+    <script type="text/cycript">
+    var id = "com.classicxiirepo.cxls3";
+        var InfoStats = {
+            init : function(){
+                [IS2Weather registerForWeatherUpdatesWithIdentifier:id andCallback:^ void () {
+                    InfoStats.updateDOM();
+                }];
+                [IS2Weather setWeatherUpdateTimeInterval:10 forRequester:id];
+                InfoStats.updateOften();
+                InfoStats.updateDOM();
+            },
+            unload: function(){
+                [IS2Weather unregisterForUpdatesWithIdentifier:id];
+                return null;
+            },
+            updateOften: function(){
+                var BatteryLevel = [IS2System batteryPercent];
+
+document.getElementById('battery').innerHTML = BatteryLevel + "%";
+
+                setTimeout(function(){
+                    InfoStats.updateOften();
+                },1000);
+            },
+            updateDOM: function(){
+                var temp = [IS2Weather currentTemperature],
+                       tempunit = ([IS2Weather isCelsius]) ? "C" : "F";
+                 document.getElementById('temp').innerHTML = temp + '&deg;' + tempunit;               
+            }
+        };
+    </script>
 </body>
 </html>

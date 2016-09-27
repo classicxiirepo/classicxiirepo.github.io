@@ -1,19 +1,14 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>CX.LS 4 by @Classicxii</title>
 
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
 <link rel="stylesheet" href="Style.css" type="text/css" media="screen"/>
 
-<script type="text/javascript" charset="utf-8" src="Config.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/main.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
-
 <body onload="init()">
 
-<div id="Clock">
-<a id="hour"></a> <a id="minute"></a> <a id="minutesunit"></a>
-</div>
+<div id="Clock">two o' clock</div>
 
 <div id="R"></div>
 <div id="T"></div>
@@ -21,14 +16,30 @@
 <div id="S"></div>
 
 <div id="First">
-hi, today is <a id="day"></a></div>
-
-<div id="Second">
-<a id="month"></a>, <a id="date"></a>
+hi, today is <a id="day">monday</a>
 </div>
 
-<div id="Third">
-<p>and right now it's..</p></div>
+<div id="Second"></div>
 
+<div id="Third">
+<p>and right now it's..</p>
+</div>
+
+    <script type="text/javascript" src="Scripts/clock.js"></script>
+    <script type="text/javascript" src="Scripts/lang.js"></script>
+    <script type="text/javascript">
+        clock({
+          twentyfour : twentyfour,
+          padzero : false,
+          refresh : 5000,
+          success: function(clock){
+document.getElementById('Clock').innerHTML = clock.hourtext() + " " + clock.minuteonetext() + " " + clock.minutetwotext();
+
+document.getElementById('Second').innerHTML = translate[current].month[clock.month()] + " " + clock.date() + " " +clock.year();
+
+document.getElementById('day').innerHTML = translate[current].weekday[clock.day()];
+          }
+        });
+    </script>
 </body>
 </html>

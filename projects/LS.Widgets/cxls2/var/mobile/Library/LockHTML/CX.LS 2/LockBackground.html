@@ -5,29 +5,50 @@
 
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-
 <link rel="stylesheet" href="Style.css" type="text/css" media="screen"/>
-
-<script type="text/javascript" charset="utf-8" src="Config.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/main.js"></script>
 
 </head>
 
 <body onload="init()">
 
 <div id="clock">
-[ <a id="hour"></a> <a id="minute"></a> <a id="minutesunit"></a> <a id="ampm"></a> ]
+[ <a id="time">seven thirty four</a> ]
 </div>
 
 <div id="Circle"></div>
-
-<div id="day"></div>
+<div id="day">S</div>
 
 <div id="Calendar" style="line-height:11vw;">
-<a id="month"></a><br><a id="date"></a><br><a id="year"></a>
+<a id="month">march</a><br><a id="date">nine</a><br><a id="year">2016</a>
 </div>
 
+    <script type="text/javascript" src="Scripts/clock.js"></script>
+    <script type="text/javascript" src="Scripts/lang.js"></script>
+    <script type="text/javascript">
+        clock({
+          twentyfour : twentyfour,
+          padzero : false,
+          refresh : 5000,
+          success: function(clock){
+document.getElementById('time').innerHTML = clock.hourtext() + " " + clock.minuteonetext() + " " + clock.minutetwotext();
+
+document.getElementById('date').innerHTML = clock.datetext();
+
+document.getElementById('year').innerHTML = clock.year();
+
+document.getElementById('month').innerHTML = translate[current].month[clock.month()];
+
+document.getElementById('day').innerHTML = translate[current].oneletterday[clock.day()];
+          }
+        });
+    </script>
+<script type="text/cycript">
+
+if(disableDay){
+
+document.getElementById("Circle").style.display = "none";
+document.getElementById("day").style.display = "none";
+}
+</script>
 </body>
 </html>

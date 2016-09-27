@@ -3,33 +3,60 @@
 
 <title>CX.LS 1 by @Classicxii</title>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
 <link rel="stylesheet" href="Style.css" type="text/css" media="screen" />
-
-<script type="text/javascript" charset="utf-8" src="Config.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Clock.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Weather.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Languages.js"></script>
 
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
 </head>
 
-<body onload="init()">
+<body onload="InfoStats.init()" onunload= "InfoStats.unload()">
 
-<div id="CD"> 
-- <a id="month"></a> <a id="date"></a> <a id="year"></a> - <br><a id="hour"></a>:<a id="minute"></a> <a id="ampm"></a>
+<div id="Info"> 
+- <a id="cal">September 21 2016</a> - <br><a id="time">09:12 am</a>
 </div>
 
-<div id="weekday"></div> 
-
-<div id="Weather">
-<a id="desc"></a> <a id="temp"></a>
-</div>
-
+<div id="day">monday</div> 
+<div id="weather">cloudy 56&deg;</div>
 <div id="box"></div>
 
+    <script type="text/javascript" src="Scripts/clock.js"></script>
+    <script type="text/javascript" src="Scripts/lang.js"></script>
+    <script type="text/javascript">
+        clock({
+          twentyfour : twentyfour,
+          padzero : padzero,
+          refresh : 5000,
+          success: function(clock){
+document.getElementById('time').innerHTML = clock.hour() + " " + clock.minute() + " " + clock.am();
+
+document.getElementById('cal').innerHTML = translate[current].month[clock.month()] + " " + clock.date() + " " + clock.year();
+
+document.getElementById('day').innerHTML = translate[current].weekday[clock.day()];
+          }
+        });
+    </script>
+
+    <script type="text/cycript">
+    var id = "com.classicxiirepo.cxls1";
+        var InfoStats = {
+            init : function(){
+                [IS2Weather registerForWeatherUpdatesWithIdentifier:id andCallback:^ void () {
+                    InfoStats.updateDOM();
+                }];
+                [IS2Weather setWeatherUpdateTimeInterval:10 forRequester:id];
+                InfoStats.updateDOM();
+            },
+            unload: function(){
+                [IS2Weather unregisterForUpdatesWithIdentifier:id];
+                return null;
+            },
+            updateDOM: function(){
+             var tempunit = ([IS2Weather isCelsius]) ? "C" : "F",
+                    condition = [IS2Weather currentCondition],
+                    temp = [IS2Weather currentTemperature];
+             document.getElementById('weather').innerHTML = translate[current].condition[condition] + " " + temp + '&deg;' + tempunit;
+            }
+        };
+    </script>
 </body>
 </html>

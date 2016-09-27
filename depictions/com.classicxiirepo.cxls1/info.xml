@@ -1,7 +1,7 @@
 <package>
 	<id>com.classicxiirepo.cxls1</id>
 	<name>CX.LS 1</name>
-	<version>1.0</version>
+	<version>2.0</version>
 	<compatibility>
 		<firmware>
 			<miniOS>7.0</miniOS>
@@ -26,6 +26,9 @@
 		</screenshot>
 	</screenshots>
 	<changelog>
-		<change>Initial release</change>
+		<change><![CDATA[
+			Widget was partialy recoded.<br /><br />
+			Switched to IS2 weather info, removed weather code.<br /><br />
+			Added "Options.plist" file and removed "Config.js" file. <br /><br />]]></change>
 	</changelog>
 </package>

@@ -3,4 +3,11 @@
 		<version>1.0</version>
 		<change>Initial Release</change>
 	</changes>
+	<changes>
+		<version>2.0</version>
+		<change><![CDATA[
+			Widget was partialy recoded.<br /><br />
+			Changed the date info from text to numbers and added year. Date written in text couldn't fit in the box. <br /><br />
+			Added "Options.plist" file and removed "Config.js" file. <br /><br />]]></change>
+	</changes>
 </changelog>

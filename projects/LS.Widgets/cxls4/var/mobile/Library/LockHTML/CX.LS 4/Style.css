@@ -3,14 +3,14 @@ body{
 	padding:0;
 	font-weight:bold;
 	color:black;
-      font-family:Love;
+       font-family:Love;
 	text-transform:lowercase;
 	letter-spacing:1.5;
-      opacity:0.9;
+       opacity:0.9;
 }
 @font-face{
 	font-family:Love;
-	src:url(Love.ttf);
+	src:url(Fonts/Love.ttf);
 }
 #first{
        position:absolute; top:38.6%; left:25%; width:50%; text-align:center; z-index:50;
