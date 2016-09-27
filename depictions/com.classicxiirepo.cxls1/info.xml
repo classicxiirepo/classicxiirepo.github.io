@@ -26,9 +26,9 @@
 		</screenshot>
 	</screenshots>
 	<changelog>
-		<change>
-			<p>Widget was partialy recoded.</p>
+		<change><![CDATA[<p>Widget was partialy recoded.</p>
 			<p>Switched to IS2 weather info, removed weather code.</p>
-		    <p>Added "Options.plist" file and removed "Config.js" file.</p></change>
+		    <p>Added "Options.plist" file and removed "Config.js" file.</p>]]>
+		</change>
 	</changelog>
 </package>
