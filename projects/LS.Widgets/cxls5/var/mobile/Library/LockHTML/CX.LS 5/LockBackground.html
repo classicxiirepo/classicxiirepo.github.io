@@ -3,26 +3,67 @@
 
 <title>CX.LS 5 by @Classicxii</title>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
 <link rel="stylesheet" href="Style.css" type="text/css" media="screen" />
-
-<script type="text/javascript" charset="utf-8" src="Config.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Weather.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Clock.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Languages.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Battery.js"></script>
 
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 
-<body onload="init()">
+<body onload="InfoStats.init()" onunload= "InfoStats.unload()">
 
 <div id="Container" style="line-height:7.4vw;">
-<a id="hour"></a>:<a id="minute"></a> <a id="ampm"></a><br><a id="condition"></a> <a id="temp"></a><br><a id="weekday"></a><br><a id="month"></a> <a id="date"></a> <a id="year"></a><br><a id="charging"></a> <a id="battery"></a> 
+<a id="time">10:11 pm</a><br><a id="weather">cloudy 26&deg;C</a><br><a id="day">monday</a><br><a id="cal">September 26 2016</a><br><a id="battery">get infostats2</a> 
 </div>
 
 <div id="S"></div>
 
-</script>
+    <script type="text/javascript" src="Scripts/clock.js"></script>
+    <script type="text/javascript" src="Scripts/lang.js"></script>
+    <script type="text/javascript">
+        clock({
+          twentyfour : twentyfour,
+          padzero : padzero,
+          refresh : 5000,
+          success: function(clock){
+document.getElementById('time').innerHTML = clock.hour() + ":" + clock.minute() + " " + clock.am();
+
+document.getElementById('cal').innerHTML = translate[current].month[clock.month()] + " " + clock.date() + " " + clock.year();
+
+document.getElementById('day').innerHTML = translate[current].weekday[clock.day()];
+          }
+        });
+    </script>
+
+    <script type="text/cycript">
+    var id = "com.classicxiirepo.cxls5";
+        var InfoStats = {
+            init : function(){
+                [IS2Weather registerForWeatherUpdatesWithIdentifier:id andCallback:^ void () {
+                    InfoStats.updateDOM();
+                }];
+                [IS2Weather setWeatherUpdateTimeInterval:10 forRequester:id];
+                InfoStats.updateOften();
+                InfoStats.updateDOM();
+            },
+            unload: function(){
+                [IS2Weather unregisterForUpdatesWithIdentifier:id];
+                return null;
+            },
+            updateOften: function(){
+                var BatteryLevel = [IS2System batteryPercent],
+                       BatteryState = [IS2System batteryState];
+
+document.getElementById('battery').innerHTML = BatteryState + " " + BatteryLevel + "%";
+
+                setTimeout(function(){
+                    InfoStats.updateOften();
+                },1000);
+            },
+            updateDOM: function(){
+                var temp = [IS2Weather currentTemperature],
+                       condition = [IS2Weather currentCondition],
+                       tempunit = ([IS2Weather isCelsius]) ? "C" : "F";
+                 document.getElementById('weather').innerHTML = translate[current].condition[condition] + " " + temp + '&deg;' + tempunit;               
+            }
+        };
+    </script>
 </body>
 </html>
