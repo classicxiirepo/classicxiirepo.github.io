@@ -27,8 +27,8 @@
 	</screenshots>
 	<changelog>
 		<change><![CDATA[
-			Widget was partialy recoded.<br /><br />
-			Switched to IS2 weather info, removed weather code.<br /><br />
+			Widget was partialy recoded.<br />
+			Switched to IS2 weather info, removed weather code.<br />
 			Added "Options.plist" file and removed "Config.js" file.]]></change>
 	</changelog>
 </package>
