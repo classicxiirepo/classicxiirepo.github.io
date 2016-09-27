@@ -8,6 +8,6 @@
 		<change><![CDATA[
 			Widget was partialy recoded.<br /><br />
 			Switched to IS2 weather info, removed weather code.<br /><br />
-			Added "Options.plist" file and removed "Config.js" file. <br /><br />]]></change>
+			Added "Options.plist" file and removed "Config.js" file.]]></change>
 	</changes>
 </changelog>
