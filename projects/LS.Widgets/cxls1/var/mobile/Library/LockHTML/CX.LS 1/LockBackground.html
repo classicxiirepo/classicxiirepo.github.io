@@ -27,7 +27,7 @@
           padzero : padzero,
           refresh : 5000,
           success: function(clock){
-document.getElementById('time').innerHTML = clock.hour() + " " + clock.minute() + " " + clock.am();
+document.getElementById('time').innerHTML = clock.hour() + ":" + clock.minute() + " " + clock.am();
 
 document.getElementById('cal').innerHTML = translate[current].month[clock.month()] + " " + clock.date() + " " + clock.year();
 
