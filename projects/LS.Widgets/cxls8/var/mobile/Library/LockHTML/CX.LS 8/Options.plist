@@ -16,19 +16,9 @@
 		<key>default</key>
 		<false/>
 		<key>label</key>
-		<string>Padzero</string>
+		<string>padzero</string>
 		<key>name</key>
 		<string>padzero</string>
-		<key>type</key>
-		<string>switch</string>
-	</dict>
-	<dict>
-		<key>default</key>
-		<false/>
-		<key>label</key>
-		<string>Disable Battery</string>
-		<key>name</key>
-		<string>disableBattery</string>
 		<key>type</key>
 		<string>switch</string>
 	</dict>

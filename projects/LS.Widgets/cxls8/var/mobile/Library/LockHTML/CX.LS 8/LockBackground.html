@@ -5,21 +5,13 @@
 
 <link rel="stylesheet" href="Style.css" type="text/css" media="screen" />
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<script type="text/javascript" charset="utf-8" src="Config.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Clock.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
-
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
 </head>
 
 <body onload="init()">
 
-<div id="Clock">
-<a id="hour"></a>:<a id="minute"></a> 
-</div>
+<div id="Clock">11:43</div>
 
 <div id="Textlocked" style="line-height:8px;">
 Slide to unlock // passcode<br>touch id // fingerprint
@@ -29,5 +21,17 @@ Slide to unlock // passcode<br>touch id // fingerprint
 
 <img id="lock" src="Stuffs/lock.png"></img>
 
+    <script type="text/javascript" src="Scripts/clock.js"></script>
+    <script type="text/javascript" src="Scripts/lang.js"></script>
+    <script type="text/javascript">
+        clock({
+          twentyfour : twentyfour,
+          padzero : padzero,
+          refresh : 5000,
+          success: function(clock){
+document.getElementById('Clock').innerHTML = clock.hour() + ":" + clock.minute();
+          }
+        });
+    </script>
 </body>
 </html>

@@ -7,11 +7,6 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<script type="text/javascript" charset="utf-8" src="Config.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Clock.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/Lang.js"></script>
-<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
-
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
 </head>
@@ -19,7 +14,7 @@
 <body onload="init()">
 
 <div id="Clock">
-<a id="hour"></a><br><a id="minute"></a>
+<a id="hour">22</a><br><a id="minute">09</a>
 </div>
 
 <div id="Batt">
@@ -28,9 +23,7 @@
 
 <div id="Percent">%</div> 
 
-<div id="Cal">
-<a id="month"></a> <a id="date"></a> <a id="weekday"></a>
-</div>
+<div id="Cal">Sep 26 Tue</div>
 
 <div id="txt">
 •<br>月
@@ -46,6 +39,23 @@
 
 <div id="Box"></div>
 <div id="Box2"></div>
+
+    <script type="text/javascript" src="Scripts/clock.js"></script>
+    <script type="text/javascript" src="Scripts/lang.js"></script>
+    <script type="text/javascript">
+        clock({
+          twentyfour : twentyfour,
+          padzero : padzero,
+          refresh : 5000,
+          success: function(clock){
+document.getElementById('hour').innerHTML = clock.hour();
+
+document.getElementById('minute').innerHTML = clock.minute();
+
+document.getElementById('Cal').innerHTML = translate[current].smonth[clock.month()] + " " + clock.date() + " " + translate[current].sday[clock.day()];
+          }
+        });
+    </script>
 
 <script type="text/cycript">
     var getBattery = function() {return [IS2System batteryPercent]; };
