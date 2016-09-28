@@ -6,8 +6,8 @@
 	<changes>
 		<version>2.0</version>
 		<change><![CDATA[
-			Widget was partialy recoded.<br /><br />
-			Changed the date info from text to numbers and added year. Date written in text couldn't fit in the box. <br /><br />
-			Added "Options.plist" file and removed "Config.js" file.]]></change>
+			<p>Widget was partialy recoded.</p>
+			<p>Changed the date info from text to numbers and added year. Date written in text couldn't fit in the box.</p>
+			<p>Added "Options.plist" file and removed "Config.js" file.</p>]]></change>
 	</changes>
 </changelog>

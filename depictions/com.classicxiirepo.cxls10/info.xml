@@ -1,7 +1,7 @@
 <package>
 	<id>com.classicxiirepo.cxls9</id>
 	<name>CX.LS 9</name>
-	<version>2.0</version>
+	<version>1.0</version>
 	<compatibility>
 		<firmware>
 			<miniOS>7.0</miniOS>
@@ -15,7 +15,8 @@
 		<description><![CDATA[<b>Installed to the LockHTML directory:</b> </ br>/var/mobile/Library/LockHTML <br /> <br />
                           <b>If you are using GroovyLock, move the widget folder from LockHTML directory to: </b> </ br> /var/mobile/Library/Groovylock <br /> <br />
                           <b>Tweaks that you can use with:</b> <br />
-                          LockHTML, XenHTML or GroovyLock]]></description>
+                          LockHTML, XenHTML or GroovyLock <br /> <br />
+                          Widgets with blur only works on iOS 9 only!]]></description>
     	<description><![CDATA[<b>Got questions? Contact me on:</b> <br />
                           Twitter: @Classicxii <br />
                           Email: classicxii42@gmail.com ]]></description>
@@ -26,8 +27,6 @@
 		</screenshot>
 	</screenshots>
 	<changelog>
-		<change><![CDATA[
-			<p>Widget was partialy recoded.</p>
-		    <p>Added "Options.plist" file and removed "Config.js" file.</p>]]></change>
+		<change>Initial Release</change>
 	</changelog>
 </package>
