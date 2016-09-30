@@ -11,8 +11,12 @@ body {
       font-family:Regular;
       src:url(Stuffs/Regular.ttf);
 }
+@font-face{
+      font-family:Sanchezregular;
+      src:url(Stuffs/Sanchezregular.otf);
+}
 #Clock{
-       position:absolute; top:93%; left:-2%; width:32%; text-align:center; z-index:50; font-size:7vw; letter-spacing:3; opacity:0.9;
+       position:absolute; top:93%; left:-2%; width:32%; text-align:center; z-index:50; font-size:7vw; letter-spacing:3; opacity:0.9; font-family:Sanchezregular;
 }
 #Textlocked{
 position:absolute; top:93.5%; left:27.2%; width:100%; text-align:left; z-index:50; opacity:1; font-size:1.6vw; 
