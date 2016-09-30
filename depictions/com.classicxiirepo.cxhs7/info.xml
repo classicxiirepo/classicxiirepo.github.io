@@ -17,7 +17,8 @@
                           <b>Tweaks that you can use with:</b> <br />
                           LockHTML, XenHTML or GroovyLock <br /> <br />
                           Widgets with blur only works on iOS 9 only!]]></description>
-<description><![CDATA[<p>This widget comes with 3 different sizes(Widget.plist) for iP5, iP6, iP6+. The dafault size is iP6. Before applying the widget with iWidgets or XenHTML, Choose your "Widget.plist" size and delete unwanted sizes if you want to.]]></description>
+<description><![CDATA[<p>This widget comes with 3 different sizes(Widget.plist) for iP5, iP6, iP6+.</p>
+	<p>Before applying the widget with iWidgets or XenHTML, choose your "Widget.plist" size and delete unwanted sizes if you want to.</p>]]></description>
     	<description><![CDATA[<b>Got questions? Contact me on:</b> <br />
                           Twitter: @Classicxii <br />
                           Email: classicxii42@gmail.com ]]></description>
@@ -35,7 +36,8 @@
 			<p>Improved the touch events for music controls and the toggles.</p>
 			<p>Added more apps for Default Music Player. iHeartRadio, SiriusXM, Google Play Music, Youtube Music, Shazam, Amazon Music, TuneInRadio, Slacker Radio.</p>
 			<p>Removed my old built-in app drawer and added an option to open Instalauncher, AppDrawer, Fern tweaks and flashlight & app switcher is included aswell.</p>
-			<p>Removed Fadein/Fadeout animation when opening music player. For faster animation.</p>]]>
+			<p>Removed Fadein/Fadeout animation when opening music player. For faster animation.</p>
+			<p>Change the bottombar color to bit darker</p>]]>
 		</change>
 	</changelog>
 </package>

@@ -12,6 +12,7 @@
 			<p>Improved the touch events for music controls and the toggles.</p>
 			<p>Added more apps for Default Music Player. iHeartRadio, SiriusXM, Google Play Music, Youtube Music, Shazam, Amazon Music, TuneInRadio, Slacker Radio.</p>
 			<p>Removed my old built-in app drawer and added an option to open Instalauncher, AppDrawer, Fern tweaks and flashlight & app switcher is included aswell.</p>
-			<p>Removed Fadein/Fadeout animation when opening music player. For faster animation.</p>]]></change>
+			<p>Removed Fadein/Fadeout animation when opening music player. For faster animation.</p>
+			<p>Change the bottombar color to bit darker</p>]]></change>
 	</changes>
 </changelog>
