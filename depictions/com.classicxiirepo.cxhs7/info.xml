@@ -12,11 +12,9 @@
 		<package>InfoStats 2</package>
 	</dependencies>
 	<descriptionlist>
-		<description><![CDATA[<b>Installed to the LockHTML directory:</b> </ br>/var/mobile/Library/LockHTML <br /> <br />
-                          <b>If you are using GroovyLock, move the widget folder from LockHTML directory to: </b> </ br> /var/mobile/Library/Groovylock <br /> <br />
+		<description><![CDATA[<b>Installed to the iWidgets directory:</b> </ br>/var/mobile/Library/iWidgets <br /> <br />
                           <b>Tweaks that you can use with:</b> <br />
-                          LockHTML, XenHTML or GroovyLock <br /> <br />
-                          Widgets with blur only works on iOS 9 only!]]></description>
+                          iWidgets or XenHTML]]></description>
 <description><![CDATA[<p>This widget comes with 3 different sizes(Widget.plist) for iP5, iP6, iP6+.</p>
 	<p>Before applying the widget with iWidgets or XenHTML, choose your "Widget.plist" size and delete unwanted sizes if you want to.</p>]]></description>
     	<description><![CDATA[<b>Got questions? Contact me on:</b> <br />
