@@ -15,7 +15,8 @@
 		<description><![CDATA[<b>Installed to the iWidgets directory:</b> </ br>/var/mobile/Library/iWidgets <br /> <br />
                           <b>Tweaks that you can use with:</b> <br />
                           iWidgets or XenHTML]]></description>
-<description><![CDATA[<p>This widget comes with 3 different sizes(Widget.plist) for iP5, iP6, iP6+.</p>
+<description><![CDATA[<p><b>Widget size info</b></p>
+	<p>This widget comes with 3 different sizes(Widget.plist) for iP5, iP6, iP6+.</p>
 	<p>Before applying the widget with iWidgets or XenHTML, choose your "Widget.plist" size and delete unwanted sizes if you want to.</p>]]></description>
     	<description><![CDATA[<b>Got questions? Contact me on:</b> <br />
                           Twitter: @Classicxii <br />
@@ -35,7 +36,7 @@
 			<p>Added more apps for Default Music Player. iHeartRadio, SiriusXM, Google Play Music, Youtube Music, Shazam, Amazon Music, TuneInRadio, Slacker Radio.</p>
 			<p>Removed my old built-in app drawer and added an option to open Instalauncher, AppDrawer, Fern tweaks and flashlight & app switcher is included aswell.</p>
 			<p>Removed Fadein/Fadeout animation when opening music player. For faster animation.</p>
-			<p>Change the bottombar color to bit darker</p>]]>
+			<p>Change the bottombar color to bit darker color.</p>]]>
 		</change>
 	</changelog>
 </package>
