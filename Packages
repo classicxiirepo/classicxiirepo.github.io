@@ -3,12 +3,12 @@ Version: 2.0
 Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxhs7_2.0_iphoneos-arm.deb
-Size: 121210
-MD5sum: cc5c8670b929ff15f5e014fb84cee70f
-SHA1: dc1508701868e522cf1b8d04a2521de02abafdd9
-SHA256: 9ab1633afb1e19a065b6a3244b415612d626036fadc1f1ab12a03d0ba671cec4
+Size: 121208
+MD5sum: 0c0910d975c9fe3fea5f3b24532f44bc
+SHA1: fd2e50dddc0b55f5927f2ab50dd0ed046cf4052a
+SHA256: a13f47457bae3330010d157575ae4d1c6fea3789c404b4cbba34f703b7173e34
 Section: Widgets (CX.HS)
-Description: Classicxii's Lockscreen Widget
+Description: Classicxii's Homescreen Widget
 Author: Classicxii <classicxii42@gmail.com>
 Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxhs7
 Name: CX.HS 7
@@ -19,9 +19,9 @@ Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls1_2.0_iphoneos-arm.deb
 Size: 86972
-MD5sum: e13bb324a6229c1c131f0849759cf292
-SHA1: 4e199f86dde40e8a458cb62a2c87f52157576980
-SHA256: cc53e0fd4e395967fc2232b2c9ee75b00deeb9990cd0b6612a4d69e3984a3670
+MD5sum: e37d621365494a492091a2d833d15abb
+SHA1: 684e6c529e75df0da123fa349adfe4ebb0fe12cb
+SHA256: 49c08594c35ca56127629187eaef5d0506c9067c6519f05eb2b191aa6df72d93
 Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii <classicxii42@gmail.com>
@@ -34,9 +34,9 @@ Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls10_1.0_iphoneos-arm.deb
 Size: 21246
-MD5sum: 7aea4d57f8c8761a0b5bbfbcd539e783
-SHA1: 440d1e29785b9acf595ee9324d4f668cb9aa4ad1
-SHA256: affd14b915dc8aaf15d153f321956ebfc08d8abd5cf143d6914a82fc6238e987
+MD5sum: 46c776afd9d99c8b3cd5f73fd8d1f272
+SHA1: 600c3ec998a6f6867633074875968aa3482dc5b5
+SHA256: 57469da73934d0e09fde35cee45b6cf593ae95bc37e70261734437731d2f8c4a
 Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii <classicxii42@gmail.com>
@@ -49,9 +49,9 @@ Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls2_2.0_iphoneos-arm.deb
 Size: 105204
-MD5sum: d2f4e311780bbf8b1c3ffa7c15798cdf
-SHA1: 1caa859c4dce4d9af724c91674beb4b6fe180825
-SHA256: 9a10ae9560c2b44c048d0bcef320d96a2261b1fb1780214ecf75f744fd05fa1f
+MD5sum: 797029bb3c2f992f6f3e9d2d682c6129
+SHA1: ab94d2be513c2e9580fdec010e0cc1ccc3fcce4c
+SHA256: ee1f2c41956fbab33e5d8593ae0b24c9116b053bf84b6e1855fcf2970bf0c311
 Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii <classicxii42@gmail.com>
@@ -64,9 +64,9 @@ Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls3_2.0_iphoneos-arm.deb
 Size: 65690
-MD5sum: 9762f2b47e8f6a7f97bf2f448fc03de1
-SHA1: 63386947a38f77a63f4cf908835d14990292acde
-SHA256: 6c7b47619fe01ac14e60634c1f4b891a33d0ad1fad3ecd5ee99fbe66b854adb4
+MD5sum: 418333820069926814186486fe048a14
+SHA1: 754826a41ba1a4bb8f0f632e93441f9b85bc562b
+SHA256: bced459d8899135e8f9aae9248a8a301d6d56d2c32b04dac7e86efce15833fdf
 Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii <classicxii42@gmail.com>
@@ -79,9 +79,9 @@ Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls4_2.0_iphoneos-arm.deb
 Size: 20534
-MD5sum: 5fe5b6b835178a8d8121a5c0c6e7fc9b
-SHA1: 4eae44e42a3ef0e588bfb33ad2251a0a652a17c6
-SHA256: c9b9933fbf0df8c05a3f9b16cc1689576878e129f095c72c26cdf19b46780b7b
+MD5sum: 2389f55485a0ab7548c95390f03f9a14
+SHA1: 2ecc5ee4cba2f776c86d8e071403ef8accb2d5e1
+SHA256: 4314360a1c73d9290295cede70a0e00f7afaac261a803bc687c26550648a7dbb
 Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii <classicxii42@gmail.com>
@@ -94,9 +94,9 @@ Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls5_2.0_iphoneos-arm.deb
 Size: 34642
-MD5sum: 4b92ebca1ea6746c6c0e553ff98884a3
-SHA1: c1b90e9e20e4e69e756c59342054b496862e323a
-SHA256: 46f30a4786e4f50dcf91f751834e6a7f0f567333e206954cc281c8f116d07cc0
+MD5sum: d61c9d6c4b7a3fec60e7dff505402ff3
+SHA1: a86652aecb54c1b0e4bd9311330fe40399f99a19
+SHA256: 290d16d794ffdaa0f3b8250068a16527d4ef7dbec4bafb47651ee95121fa730e
 Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii <classicxii42@gmail.com>
@@ -109,9 +109,9 @@ Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls6_2.0_iphoneos-arm.deb
 Size: 57976
-MD5sum: 4da7b48aaa8e91c560af1f677272f9c7
-SHA1: 223fe39cc27a79de233fa9b830806e7981df9fa4
-SHA256: 83ec23505865c2ab692df1139c7b588be82948f1c6d4ca4fd50e7017f7132532
+MD5sum: 6fbdc68e4aa3300f68a1c08ed344404c
+SHA1: 1245d835b8acea8054fa02e615263aa4d0cad543
+SHA256: 3855afa097ceed94c43b8bc28c40b91796b9874ef79f8e231bb3f85413813249
 Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii <classicxii42@gmail.com>
@@ -124,9 +124,9 @@ Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls7_2.0_iphoneos-arm.deb
 Size: 41340
-MD5sum: 8e5c9b4a4d70cd121c37303c6fd1bc83
-SHA1: e2907afd198bc0927ea5ea5f3cf3538890058b47
-SHA256: b2c85627a0b466c3530558b84f49875f311adabf54f4215240dda66524a3a74b
+MD5sum: 8099f62feffd10300475d259487ddd2e
+SHA1: 741529c2e33fd05294be624d75b52dec1ecb3c0a
+SHA256: b1e2eb8ff5afdff54a46fc2b6aa881c9a172c1875a3f049e1847e8a50f0dbade
 Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii <classicxii42@gmail.com>
@@ -139,9 +139,9 @@ Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls8_2.1_iphoneos-arm.deb
 Size: 69590
-MD5sum: 12b33ba657fffac7b49e3cbbf6a5afc3
-SHA1: a29000af9685fc2aad6c4d7a6a8211cd3a3f42d6
-SHA256: 1524cac23a90ed19d3ed1dbe9f821791c4a7d87bc42eb8b57c9f7e85a8052ebc
+MD5sum: fd0ae221c9cf24f7ec77b15a41d53b10
+SHA1: e1044a66258603eaf612f1166c4b3bac09fcb548
+SHA256: d4967f1802f817fa62d7a1e28b931cef37f4228b3622397bbe95b139f3e1cbb2
 Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii <classicxii42@gmail.com>
@@ -154,9 +154,9 @@ Architecture: iphoneos-arm
 Maintainer: Classicxii <classicxii42@gmail.com>
 Filename: ./debs/com.classicxiirepo.cxls9_2.0_iphoneos-arm.deb
 Size: 32650
-MD5sum: d491faae44effbc22fb92555e05d061d
-SHA1: 2c1fbeb80a809a610f3c6782e5580132dfc346b0
-SHA256: b522f47b2502b602b41f8605739e4a49c7b7d2032904dc4c79ba7ee3834da403
+MD5sum: afc9c0783deefef25788172c6bbc01d7
+SHA1: 3b0ae9ffe00df39f3be00d97951bff8c32296718
+SHA256: 465d3b7d564a84d17bff299b7311a9a465e4b4d93aed5878ba10368f1f5acd5f
 Section: Widgets (CX.LS)
 Description: Classicxii's Lockscreen Widget
 Author: Classicxii <classicxii42@gmail.com>
