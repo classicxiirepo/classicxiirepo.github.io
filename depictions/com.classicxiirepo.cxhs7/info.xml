@@ -1,0 +1,41 @@
+<package>
+	<id>com.classicxiirepo.cxhs7</id>
+	<name>CX.HS 7</name>
+	<version>2.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>7.0</miniOS>
+      <maxiOS>9.3.3+</maxiOS>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>InfoStats 2</package>
+	</dependencies>
+	<descriptionlist>
+		<description><![CDATA[<b>Installed to the LockHTML directory:</b> </ br>/var/mobile/Library/LockHTML <br /> <br />
+                          <b>If you are using GroovyLock, move the widget folder from LockHTML directory to: </b> </ br> /var/mobile/Library/Groovylock <br /> <br />
+                          <b>Tweaks that you can use with:</b> <br />
+                          LockHTML, XenHTML or GroovyLock <br /> <br />
+                          Widgets with blur only works on iOS 9 only!]]></description>
+<description><![CDATA[<p>This widget comes with 3 different sizes(Widget.plist) for iP5, iP6, iP6+. The dafault size is iP6. Before applying the widget with iWidgets or XenHTML, Choose your "Widget.plist" size and delete unwanted sizes if you want to.]]></description>
+    	<description><![CDATA[<b>Got questions? Contact me on:</b> <br />
+                          Twitter: @Classicxii <br />
+                          Email: classicxii42@gmail.com ]]></description>
+	</descriptionlist>
+	<screenshots>
+		<screenshot>
+			<image>image.png</image>
+		</screenshot>
+	</screenshots>
+	<changelog>
+		<change><![CDATA[
+			<p>Widget was recoded.</p>
+			<p>Switched to IS2 weather info, removed weather code.</p>
+			<p>Added "Options.plist" file and removed "Config.js" file.</p>
+			<p>Improved the touch events for music controls and the toggles.</p>
+			<p>Added more apps for Default Music Player. iHeartRadio, SiriusXM, Google Play Music, Youtube Music, Shazam, Amazon Music, TuneInRadio, Slacker Radio.</p>
+			<p>Removed my old built-in app drawer and added an option to open Instalauncher, AppDrawer, Fern tweaks and flashlight & app switcher is included aswell.</p>
+			<p>Removed Fadein/Fadeout animation when opening music player. For faster animation.</p>]]>
+		</change>
+	</changelog>
+</package>
