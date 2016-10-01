@@ -15,4 +15,9 @@
 			<p>Removed Fadein/Fadeout animation when opening music player. For faster animation.</p>
 			<p>Change the bottombar color to bit darker</p>]]></change>
 	</changes>
+	<changes>
+		<version>2.1</version>
+		<change><![CDATA[
+			<p>The weather was not updating properly has now been fixed.</p>]]></change>
+	</changes>
 </changelog>
