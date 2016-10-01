@@ -7,7 +7,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="viewport" content="width=device-width, minimum-scale=0.85, maximum-scale=0.85, user-scalable=no"/>
 
 <style type="text/css">
 body {
@@ -32,7 +32,7 @@ body {
 }
 #time{
 	   position:absolute; 
-     top:81px; 
+        top:81px; 
   	 left:-112px; 
   	 text-align: center; 
   	 z-index:1; 
@@ -43,7 +43,7 @@ body {
 #CW{
 	    position:absolute; 
 	    top:84px; 
-  	  left:95px; 
+  	    left:95px; 
 	    width:320px; 
 	    text-align:left; 
 	    z-index:1;
@@ -55,7 +55,7 @@ body {
   	  width:320px; 
   	  height:45px; 
   	  z-index:-2; 
-      background-color:eeeeee; 
+         background-color:eeeeee; 
   	  box-shadow:0px 0px 6px rgba(0,0,0, 0.7);
 }
 #Bottombar{
@@ -88,7 +88,7 @@ body {
 #BatteryImg{
 	  position:absolute; 
 	  top:77px; 
-	  left:210px; 
+	  left:220px; 
 	  width:24px; 
 	  z-index:10; 
 	  opacity:0.6; 
@@ -96,15 +96,15 @@ body {
 #MusicImg{ 
 	  position:absolute; 
 	  top:77px; 
-	  left:241.5px; 
+	  left:251.5px; 
 	  width:24px; 
 	  z-index:10;   
-    opacity:0.6; 
+         opacity:0.6; 
 }
 #Folder{ 
 	  position:absolute; 
 	  top:77px; 
-	  left:272px; 
+	  left:282px; 
 	  width:24px; 
 	  z-index:10; 
 	  opacity:0.6; 
@@ -130,7 +130,7 @@ body {
 	  top:34px; 
 	  left:45px; 
 	  width:140px; 
-	  height:5px; 
+	  height:7px; 
 	  overflow:hidden; 
 	  text-align:left; 
 	  z-index:1; 
@@ -143,7 +143,7 @@ body {
 	  text-align:left; 
 	  overflow:hidden; 
 	  width:140px; 
-	  height:5px; 
+	  height:7px; 
 	  color:#323232; 
 	  z-index:1; 
 }
@@ -153,33 +153,33 @@ body {
 	  z-index:15;
 }
 #play{
-   	position:absolute; 
- 	  top:28px; 
-   	left:239.5px; 
+   	  position:absolute; 
+ 	  top:29px; 
+   	  left:243.5px; 
  	  opacity:0.6; 
  	  -webkit-filter:drop-shadow(1px 1px 1px rgba(33,33,33,0.1)); 
-    z-index:15;
+         z-index:15;
 }
 #next{
 	  position:absolute; 
-	  top:27px; 
-	  left:277px; 
+	  top:28px; 
+	  left:280px; 
 	  opacity:0.6; 
 	  -webkit-filter:drop-shadow(1px 1px 1px rgba(33,33,33,0.1)); 
-    z-index:15;
+          z-index:15;
 }
 #prev{
 	  position:absolute; 
-	  top:27px; 
-	  left:201px; 
+	  top:28px; 
+	  left:206px; 
 	  opacity:0.6; 
 	  -webkit-filter:drop-shadow(1px 1px 1px rgba(33,33,33,0.1));    
-    z-index:15;
+          z-index:15;
 }
 </style>
 </head>
 
-<body onload="init()">
+<body onload="InfoStats.init()" onunload= "InfoStats.unload()">
 
 <img id="BatteryImg" src="Stuffs/lightning.png"></img>
 <img id="Folder" src="Stuffs/folder.png"></img>
@@ -206,9 +206,9 @@ body {
 		        <div id="title">Nothing is</div>
 		        <div id="artist">currently playing</div>
 		<div id="controls">
-			      <img id="play" src="Stuffs/play.png" width="24"/>
-			      <img id="next" src="Stuffs/next.png" width="26"/>
-			      <img id="prev" src="Stuffs/prev.png" width="26"/>
+			      <img id="play" src="Stuffs/play.png" width="23"/>
+			      <img id="next" src="Stuffs/next.png" width="25"/>
+			      <img id="prev" src="Stuffs/prev.png" width="25"/>
 		</div>
 	</div>
 </div>
@@ -302,10 +302,9 @@ window.onunload = function(){
 	media.kill();
 }
 </script>
-
 <script type="text/cycript">
 var $$ = function(el){
-  return document.getElementById(el);
+	return document.getElementById(el);
 }
   var InfoStats = {
     init: function(){
@@ -347,10 +346,6 @@ var $$ = function(el){
             $$('LevelDisplay').innerHTML = "Battery level " + BatteryLevel + "%";
     }
   };
-InfoStats.init();
-window.onunload = function(){
-	InfoStats.kill();
-}
   function triggerButton(button){
     if(button == 'Donut'){
       var iconsPage2 = [[SBIconController sharedInstance]rootIconListAtIndex:1].icons;
@@ -392,7 +387,7 @@ window.onunload = function(){
       }
     }
   }
-  var width = function() { return [IS2System deviceDisplayWidth];};
+    var width = function() { return [IS2System deviceDisplayWidth]; };
 </script>
 
 <script type="text/javascript">
@@ -433,13 +428,21 @@ document.getElementById('Folder').addEventListener('touchstart', function (e) {
 </script>
 
 <script>
-if(width() == 375){
+if( width() == 320 ){
 viewport = document.querySelector("meta[name=viewport]");
-viewport.setAttribute('content', 'width=device-width, initial-scale=1.18, maximum-scale=1.18, user-scalable=0');
+viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
 }
-else if(width() == 414 ){
+if( width() == 375 ){
 viewport = document.querySelector("meta[name=viewport]");
-viewport.setAttribute('content', 'width=device-width, initial-scale=1.33, maximum-scale=1.33, user-scalable=0');
+viewport.setAttribute('content', 'width=device-width, initial-scale=1.18, maximum-scale=1.18, user-scalable=no');
+}
+else if( width() == 414 ){
+viewport = document.querySelector("meta[name=viewport]");
+viewport.setAttribute('content', 'width=device-width, initial-scale=1.33 maximum-scale=1.33, user-scalable=no');
+}
+else if( width() == 425 ){
+viewport = document.querySelector("meta[name=viewport]");
+viewport.setAttribute('content', 'width=device-width, initial-scale=1.33, maximum-scale=1.33, user-scalable=no');
 }
 else{}
 </script>

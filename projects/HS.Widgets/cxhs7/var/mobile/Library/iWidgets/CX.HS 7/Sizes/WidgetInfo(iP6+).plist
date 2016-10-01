@@ -7,7 +7,7 @@
 	<key>size</key>
 	<dict>
 		<key>width</key>
-		<integer>375</integer>
+		<integer>414</integer>
 		<key>height</key>
 		<integer>160</integer>
 	</dict>
@@ -16,7 +16,7 @@
 		<key>x</key>
 		<integer>0</integer>
 		<key>y</key>
-		<integer>506</integer>
+		<integer>576</integer>
 	</dict>
 	<key>useOptionsPlist</key>
  	<true/>
