@@ -30,8 +30,7 @@
 	</screenshots>
 	<changelog>
 		<change><![CDATA[
-			<![CDATA[
-			<p>The weather was not updating properly has now been fixed.</p>]]>]]>
+			<p>The weather was not updating properly has now been fixed.</p>]]>
 		</change>
 	</changelog>
 </package>
