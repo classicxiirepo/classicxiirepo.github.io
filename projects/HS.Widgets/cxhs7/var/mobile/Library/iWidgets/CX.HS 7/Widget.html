@@ -229,7 +229,6 @@ document.getElementById('Cal').innerHTML = translate[current].weekday[clock.day(
     </script>
 
 <script type="text/cycript">
-var width = function() { return [IS2System deviceDisplayWidth];};
 var $$ = function(el){
 	return document.getElementById(el);
 }
@@ -301,6 +300,12 @@ $$('MusicIcon').addEventListener('touchend',function(){
 media.init();
 window.onunload = function(){
 	media.kill();
+}
+</script>
+
+<script type="text/cycript">
+var $$ = function(el){
+  return document.getElementById(el);
 }
   var InfoStats = {
     init: function(){
@@ -387,6 +392,7 @@ window.onunload = function(){
       }
     }
   }
+  var width = function() { return [IS2System deviceDisplayWidth];};
 </script>
 
 <script type="text/javascript">
