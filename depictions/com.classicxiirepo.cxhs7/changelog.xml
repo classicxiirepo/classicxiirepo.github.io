@@ -20,9 +20,14 @@
 		<change><![CDATA[
 			<p>The weather was not updating properly has now been fixed.</p>]]></change>
 	</changes>
-		<changes>
+	<changes>
 		<version>2.2</version>
 		<change><![CDATA[
 			<p>Hopefully this fixes the auto-size issues the people were having.</p>]]></change>
+	</changes>
+		<changes>
+		<version>2.3</version>
+		<change><![CDATA[
+			<p>Fixed battery state not updating</p>]]></change>
 	</changes>
 </changelog>

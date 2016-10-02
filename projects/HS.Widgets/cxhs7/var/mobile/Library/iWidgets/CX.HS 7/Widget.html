@@ -311,11 +311,9 @@ var $$ = function(el){
         [IS2Weather registerForWeatherUpdatesWithIdentifier:"com.classicxiirepo.cxhs7" andCallback:^ void () {
           InfoStats.updateInfo();
           InfoStats.updateDOM();
-          InfoStats.updateBattery();
         }];
       this.updateInfo();
       this.updateWeather();
-      this.updateBattery();
     },
     unload: function(){
       [IS2Weather unregisterForUpdatesWithIdentifier:"com.classicxiirepo.cxhs7"];
@@ -329,7 +327,6 @@ var $$ = function(el){
       setTimeout(InfoStats.updateWeather, InfoStats.refreshTime);
     },
     refreshTime : 10 * 60 * 1000,
-    BatteryTime : 5000,
     updateDOM: function(){
              var tempunit = ([IS2Weather isCelsius]) ? "C" : "F",
                  condition = [IS2Weather currentCondition],
@@ -337,13 +334,6 @@ var $$ = function(el){
                  temp = [IS2Weather currentTemperature];
                  
             $$('Weather').innerHTML = location + " " + translate[current].condition[condition] + " " + temp + '&deg;' + tempunit;
-    },
-    updateBattery: function(){
-             var BatteryLevel = [IS2System batteryPercent],
-                 BatteryState = [IS2System batteryState];
-
-            $$('BatteryState').innerHTML = "Currently " + BatteryState;
-            $$('LevelDisplay').innerHTML = "Battery level " + BatteryLevel + "%";
     }
   };
   function triggerButton(button){
@@ -387,7 +377,21 @@ var $$ = function(el){
       }
     }
   }
-    var width = function() { return [IS2System deviceDisplayWidth]; };
+    var width = function() { return [IS2System deviceDisplayWidth]; 
+};
+    var BatteryLevel = function() { return [IS2System batteryPercent];
+ };
+    var BatteryState = function() { return [IS2System batteryState];
+ };
+</script>
+
+<script>
+    (function updateBatt(){
+
+document.getElementById('LevelDisplay').textContent = "Battery level " +  BatteryLevel() + '%';
+     	document.getElementById('BatteryState').innerHTML = "Currently " + BatteryState();
+     	setTimeout(updateBatt, 10000);
+    }());
 </script>
 
 <script type="text/javascript">
