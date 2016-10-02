@@ -25,9 +25,15 @@
 		<change><![CDATA[
 			<p>Hopefully this fixes the auto-size issues the people were having.</p>]]></change>
 	</changes>
-		<changes>
+	<changes>
 		<version>2.3</version>
 		<change><![CDATA[
 			<p>Fixed battery state not updating</p>]]></change>
+	</changes>
+	<changes>
+		<version>2.4</version>
+		<change><![CDATA[
+			<p>added Tindal, Dezzer and Stingray apps for default media player.</p>
+			<p>added 3 folders for different sizes for each device. You may delete unwanted sizes if you want to.</p>]]></change>
 	</changes>
 </changelog>

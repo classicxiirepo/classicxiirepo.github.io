@@ -2,19 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>position</key>
-	<dict>
-		<key>x</key>
-		<integer>0</integer>
-		<key>y</key>
-		<integer>576</integer>
-	</dict>
+	<key>isFullscreen</key>
+	<false/>
 	<key>size</key>
 	<dict>
 		<key>height</key>
 		<integer>160</integer>
 		<key>width</key>
-		<integer>414</integer>
+		<integer>375</integer>
 	</dict>
+	<key>useOptionsPlist</key>
+	<true/>
 </dict>
 </plist>

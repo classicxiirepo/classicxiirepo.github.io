@@ -3,22 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>isFullscreen</key>
-    <false/>
+	<false/>
 	<key>size</key>
 	<dict>
-		<key>width</key>
-		<integer>414</integer>
 		<key>height</key>
 		<integer>160</integer>
-	</dict>
-	<key>position</key>
-	<dict>
-		<key>x</key>
-		<integer>0</integer>
-		<key>y</key>
-		<integer>576</integer>
+		<key>width</key>
+		<integer>320</integer>
 	</dict>
 	<key>useOptionsPlist</key>
- 	<true/>
+	<true/>
 </dict>
 </plist>

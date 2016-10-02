@@ -7,7 +7,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<meta name="viewport" content="width=device-width, minimum-scale=0.85, maximum-scale=0.85, user-scalable=no"/>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
 <style type="text/css">
 body {
@@ -179,7 +179,7 @@ body {
 </style>
 </head>
 
-<body onload="InfoStats.init()" onunload= "InfoStats.unload()">
+<body onload="didLoadPage()">
 
 <img id="BatteryImg" src="Stuffs/lightning.png"></img>
 <img id="Folder" src="Stuffs/folder.png"></img>
@@ -227,7 +227,47 @@ document.getElementById('Cal').innerHTML = translate[current].weekday[clock.day(
           }
         });
     </script>
+  <script type="text/cycript">
+    var BatteryLevel = function() { return [IS2System batteryPercent];};
+    var BatteryState = function() { return [IS2System batteryState];};
 
+  var widgetIdentifier = "com.classicxii.cxhs7";
+  
+  function updateCurrentValues() {
+        var temp = [IS2Weather currentTemperature],
+            condition = [IS2Weather currentCondition],
+            tempunit = ([IS2Weather isCelsius]) ? "C" : "F",                
+            city = [IS2Weather currentLocation];
+            
+document.getElementById('Weather').innerHTML = city + " "+ translate[current].condition[condition] + " " + temp + '&deg;' + tempunit;
+  }
+  function didLoadPage() {
+     // Register a callback for whenever weather data changes.
+        [IS2Weather registerForWeatherUpdatesWithIdentifier:widgetIdentifier andCallback:^ void () {
+            updateCurrentValues();
+        }];
+     // Grab current values
+        updateCurrentValues();
+        [IS2Weather setWeatherUpdateTimeInterval:15 forRequester:widgetIdentifier];
+  }
+    // Make sure to de-register ourselves when removed from the user's screen.
+  window.onunload = function(){ 
+      [IS2Weather unregisterForUpdatesWithIdentifier:widgetIdentifier]; 
+      [IS2Weather removeRequesterForWeatherTimeInterval:widgetIdentifier];
+      
+        return null; 
+    };
+  </script>
+
+<script>
+    (function updateBatt(){
+
+document.getElementById('LevelDisplay').textContent = "Battery level " +  BatteryLevel() + '%';
+     	document.getElementById('BatteryState').innerHTML = "Currently " + BatteryState();
+     	setTimeout(updateBatt, 5000);
+    }());
+</script>
+  
 <script type="text/cycript">
 var $$ = function(el){
 	return document.getElementById(el);
@@ -280,6 +320,12 @@ var media = {
 		        break;
 		    case "com.slacker.radio":
 		        break;
+		    case "com.deezer.Deezer":
+		        break;
+		    case "com.aspiro.TIDAL":
+		        break;
+		    case "ca.galaxie.mobile":
+		        break;
 		}
 		[IS2Media registerForNowPlayingNotificationsWithIdentifier:"com.classicxiirepo.cxhs7" andCallback:^ void () {
 		media.update();
@@ -302,40 +348,8 @@ window.onunload = function(){
 	media.kill();
 }
 </script>
+
 <script type="text/cycript">
-var $$ = function(el){
-	return document.getElementById(el);
-}
-  var InfoStats = {
-    init: function(){
-        [IS2Weather registerForWeatherUpdatesWithIdentifier:"com.classicxiirepo.cxhs7" andCallback:^ void () {
-          InfoStats.updateInfo();
-          InfoStats.updateDOM();
-        }];
-      this.updateInfo();
-      this.updateWeather();
-    },
-    unload: function(){
-      [IS2Weather unregisterForUpdatesWithIdentifier:"com.classicxiirepo.cxhs7"];
-      return null;
-    },
-    updateInfo: function(){
-      this.updateDOM();
-    },
-    updateWeather: function(){
-      [IS2Weather updateWeather];
-      setTimeout(InfoStats.updateWeather, InfoStats.refreshTime);
-    },
-    refreshTime : 10 * 60 * 1000,
-    updateDOM: function(){
-             var tempunit = ([IS2Weather isCelsius]) ? "C" : "F",
-                 condition = [IS2Weather currentCondition],
-                 location = [IS2Weather currentLocation],
-                 temp = [IS2Weather currentTemperature];
-                 
-            $$('Weather').innerHTML = location + " " + translate[current].condition[condition] + " " + temp + '&deg;' + tempunit;
-    }
-  };
   function triggerButton(button){
     if(button == 'Donut'){
       var iconsPage2 = [[SBIconController sharedInstance]rootIconListAtIndex:1].icons;
@@ -377,21 +391,6 @@ var $$ = function(el){
       }
     }
   }
-    var width = function() { return [IS2System deviceDisplayWidth]; 
-};
-    var BatteryLevel = function() { return [IS2System batteryPercent];
- };
-    var BatteryState = function() { return [IS2System batteryState];
- };
-</script>
-
-<script>
-    (function updateBatt(){
-
-document.getElementById('LevelDisplay').textContent = "Battery level " +  BatteryLevel() + '%';
-     	document.getElementById('BatteryState').innerHTML = "Currently " + BatteryState();
-     	setTimeout(updateBatt, 10000);
-    }());
 </script>
 
 <script type="text/javascript">
@@ -429,26 +428,6 @@ document.getElementById('Folder').addEventListener('touchstart', function (e) {
 	        break;
 	}
 });
-</script>
-
-<script>
-if( width() == 320 ){
-viewport = document.querySelector("meta[name=viewport]");
-viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
-}
-if( width() == 375 ){
-viewport = document.querySelector("meta[name=viewport]");
-viewport.setAttribute('content', 'width=device-width, initial-scale=1.18, maximum-scale=1.18, user-scalable=no');
-}
-else if( width() == 414 ){
-viewport = document.querySelector("meta[name=viewport]");
-viewport.setAttribute('content', 'width=device-width, initial-scale=1.33 maximum-scale=1.33, user-scalable=no');
-}
-else if( width() == 425 ){
-viewport = document.querySelector("meta[name=viewport]");
-viewport.setAttribute('content', 'width=device-width, initial-scale=1.33, maximum-scale=1.33, user-scalable=no');
-}
-else{}
 </script>
 </body>
 </html>
