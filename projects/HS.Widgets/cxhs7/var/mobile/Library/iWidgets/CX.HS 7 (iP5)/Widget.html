@@ -239,16 +239,20 @@ document.getElementById('Cal').innerHTML = translate[current].weekday[clock.day(
             tempunit = ([IS2Weather isCelsius]) ? "C" : "F",                
             city = [IS2Weather currentLocation];
             
-document.getElementById('Weather').innerHTML = city + " "+ translate[current].condition[condition] + " " + temp + '&deg;' + tempunit;
-  }
-  function didLoadPage() {
-     // Register a callback for whenever weather data changes.
+document.getElementById('Weather').innerHTML = city + " " + translate[current].condition[condition] + " " + temp + '&deg;' + tempunit;
+ 	}
+	
+	function didLoadPage() {
+	   // Register a callback for whenever weather data changes.
         [IS2Weather registerForWeatherUpdatesWithIdentifier:widgetIdentifier andCallback:^ void () {
             updateCurrentValues();
+            alert("updating weather");
         }];
-     // Grab current values
+	
+	   // Grab current values
         updateCurrentValues();
-        [IS2Weather setWeatherUpdateTimeInterval:15 forRequester:widgetIdentifier];
+        alert("updating weather");
+        [IS2Weather setWeatherUpdateTimeInterval:10 forRequester:widgetIdentifier];
   }
     // Make sure to de-register ourselves when removed from the user's screen.
   window.onunload = function(){ 
@@ -325,6 +329,8 @@ var media = {
 		    case "com.aspiro.TIDAL":
 		        break;
 		    case "ca.galaxie.mobile":
+		        break;
+		    case "com.netease.cloudmusic":
 		        break;
 		}
 		[IS2Media registerForNowPlayingNotificationsWithIdentifier:"com.classicxiirepo.cxhs7" andCallback:^ void () {
@@ -421,7 +427,7 @@ document.getElementById('BatteryImg').addEventListener('touchend',function(){
     toggleDiv2();
 });
 
-document.getElementById('Folder').addEventListener('touchstart', function (e) {
+document.getElementById('Folder').addEventListener('touchend', function (e) {
 	switch(e.target.id) {
 	    case 'Folder':
 	        triggerButton(drawer);
@@ -429,5 +435,6 @@ document.getElementById('Folder').addEventListener('touchstart', function (e) {
 	}
 });
 </script>
+
 </body>
 </html>

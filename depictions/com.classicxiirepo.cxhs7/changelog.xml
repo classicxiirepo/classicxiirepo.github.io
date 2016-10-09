@@ -36,4 +36,10 @@
 			<p>added Tindal, Dezzer and Stingray apps for default media player.</p>
 			<p>added 3 folders for different sizes for each device. You may delete unwanted sizes if you want to.</p>]]></change>
 	</changes>
+	<changes>
+		<version>2.5</version>
+		<change><![CDATA[
+			<p>added 网易云音乐(Netease Cloud Music) app for default media player.</p>
+			<p>Fixed weather chinese language translations.</p>]]></change>
+	</changes>
 </changelog>

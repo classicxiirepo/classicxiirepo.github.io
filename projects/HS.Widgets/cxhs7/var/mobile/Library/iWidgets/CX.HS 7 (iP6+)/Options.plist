@@ -61,6 +61,8 @@
 			<string>com.google.ios.youtubemusic</string>
 			<key>iHeartRadio</key>
 			<string>com.clearchannel.iheartradio</string>
+			<key>网易云音乐(NeteaseCloudMusic)</key>
+			<string>com.netease.cloudmusic</string>
 		</dict>
 		<key>type</key>
 		<string>select</string>
