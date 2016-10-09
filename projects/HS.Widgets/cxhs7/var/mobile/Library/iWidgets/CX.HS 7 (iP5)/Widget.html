@@ -246,12 +246,10 @@ document.getElementById('Weather').innerHTML = city + " " + translate[current].c
 	   // Register a callback for whenever weather data changes.
         [IS2Weather registerForWeatherUpdatesWithIdentifier:widgetIdentifier andCallback:^ void () {
             updateCurrentValues();
-            alert("updating weather");
         }];
 	
 	   // Grab current values
         updateCurrentValues();
-        alert("updating weather");
         [IS2Weather setWeatherUpdateTimeInterval:10 forRequester:widgetIdentifier];
   }
     // Make sure to de-register ourselves when removed from the user's screen.
