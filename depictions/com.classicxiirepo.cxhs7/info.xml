@@ -29,7 +29,7 @@
 	<changelog>
 		<change><![CDATA[
 			<p>added 网易云音乐(Netease Cloud Music) app for default media player.</p>
-			<p>Fixed weather chinese language translations.</p>]]>]]>
+			<p>Fixed weather chinese language translations.</p>]]>
 		</change>
 	</changelog>
 </package>
