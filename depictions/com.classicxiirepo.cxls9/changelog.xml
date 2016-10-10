@@ -9,4 +9,9 @@
 			<p>Widget was partialy recoded.</p>
 		    <p>Added "Options.plist" file and removed "Config.js" file.</p>]]></change>
 	</changes>
+	<changes>
+		<version>2.1</version>
+		<change><![CDATA[
+			<p>Hopefully this fixes the widget not working for some users.</p>]]></change>
+	</changes>
 </changelog>
