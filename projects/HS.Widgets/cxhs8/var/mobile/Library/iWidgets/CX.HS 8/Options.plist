@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>default</key>
+		<false/>
+		<key>label</key>
+		<string>24hr</string>
+		<key>name</key>
+		<string>twentyfour</string>
+		<key>type</key>
+		<string>switch</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<false/>
+		<key>label</key>
+		<string>Disable Bar</string>
+		<key>name</key>
+		<string>disableBar</string>
+		<key>type</key>
+		<string>switch</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<false/>
+		<key>label</key>
+		<string>Only Music Player</string>
+		<key>name</key>
+		<string>onlymusicplayer</string>
+		<key>type</key>
+		<string>switch</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>Music.app</string>
+		<key>label</key>
+		<string>Default Music App</string>
+		<key>name</key>
+		<string>musicApp</string>
+		<key>options</key>
+		<dict>
+			<key>AmazonMusic</key>
+			<string>com.amazon.mp3.AmazonCloudPlayer</string>
+			<key>Deezer</key>
+			<string>com.deezer.Deezer</string>
+			<key>GooglePlayMusic</key>
+			<string>com.google.PlayMusic</string>
+			<key>Music.app</key>
+			<string>com.apple.Music</string>
+			<key>Pandora</key>
+			<string>com.pandora</string>
+			<key>Shazam</key>
+			<string>com.shazam.Shazam</string>
+			<key>SiriusXM</key>
+			<string>com.siriusxm.siriusxmonline</string>
+			<key>SlackerRadio</key>
+			<string>com.slacker.radio</string>
+			<key>SoundCloud</key>
+			<string>com.soundcloud.TouchApp</string>
+			<key>Spotify</key>
+			<string>com.spotify.client</string>
+			<key>Stingray</key>
+			<string>ca.galaxie.mobile</string>
+			<key>Tidal</key>
+			<string>com.aspiro.TIDAL</string>
+			<key>TuneInRadio</key>
+			<string>com.tunein.TuneInRadio</string>
+			<key>YoutubeMusic</key>
+			<string>com.google.ios.youtubemusic</string>
+			<key>iHeartRadio</key>
+			<string>com.clearchannel.iheartradio</string>
+			<key>网易云音乐(NeteaseCloudMusic)</key>
+			<string>com.netease.cloudmusic</string>
+		</dict>
+		<key>type</key>
+		<string>select</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,320 @@
+<html>
+<head>
+
+<title>CX.HS 8 by @Classicxii</title>
+
+<!--Credits: Original code belongs to JunesiPhone & Matchstic. Code modify & integrated by Classicxii -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--Start Styling-->
+<style type="text/css">
+body{
+  -webkit-tap-highlight-color:transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+@media (max-device-width:375){
+Body{
+   margin-left:1.5;
+   -webkit-transform:scale(0.908);
+   -webkit-transform-origin: top left;
+    }
+}
+@media (max-device-width:320){
+Body{
+   margin-left:-1;
+   -webkit-transform:scale(0.77299);
+   -webkit-transform-origin: top left;
+    }
+}
+@font-face{
+   font-family:EsphimereReg;
+   src:url(Stuffs/EsphimereReg.otf);
+}
+@font-face{
+   font-family:EsphimereBold;
+   src:url(Stuffs/EsphimereBold.otf);
+}
+.Container{
+   position: relative;
+   width: 414px;
+   height: 738px;
+   overflow: hidden;
+   z-index: 1;
+}
+#Base,#Basetwo{
+   position: absolute;
+   top:25px;
+   left:40px;
+   font-size:13px;
+   color:f3f3f3;
+   font-weight:100;
+   line-height:8px;
+   font-family:EsphimereReg;
+   text-transform:uppercase;
+   letter-spacing:1;
+   text-shadow: 1px 1px 1px rgba(55,55,55,0.25);
+   z-index:3;
+}
+#Basetwo,#Album{
+   display:none;
+}
+#Plus{
+   position: absolute;
+   top:23px;
+   left:305px;
+   width:58px;
+   z-index:5;
+}
+#Time,#Open{
+   font-family:EsphimereBold;
+   font-weight:700;
+}
+#controls{
+   position: absolute;
+   top:12.5px;
+   width:414px;
+   left:85px;
+   -webkit-filter:drop-shadow(1px 1px 1px rgba(33,33,33,0.2)); 
+}
+#prev{
+   position: absolute;
+   left:112px;
+}
+#play{
+   position: absolute;
+   left:160px;
+}
+#next{
+   position: absolute;
+   left:208px;
+}
+#bar{
+   position:absolute;
+   top:0%;
+   width:82.5%;
+   height:0.3%;
+   background-color:white;
+   left:7.5%;
+}
+#Exit{
+   position:absolute;
+   top:76%;
+   line-height:30px;
+}
+</style>
+<!--End Styling-->
+
+</head>
+
+<body onload="InitLoadW()">
+
+<div id="Container" class="Container">
+<div id="bar"></div>
+<img id="Plus" src="Stuffs/Plus.svg"></img>
+   <div id="Base" class="Base">
+        <div id="Time">ten thirty seven pm</div><br>
+        <div id="Date">Thursday 16 Sep</div> <br>
+        <div id="Weather">Mostly Sunny 26&deg;C</div> <br>
+        <div id="Battery">Get Infostats 2!</div>
+    </div>
+    <div id="Basetwo" class="Basetwo">
+        <div id="Open">open media player</div><br>
+        <div id="Title">nothing is playing</div><br>
+        <div id="Artist">press play to start</div><br>
+        <div id="Exit">tap here to exit</div>
+        <div id="Album">listening music</div>
+           <div id="controls">
+		<img id="prev" src="Stuffs/prev.png" width="29"/>
+		<img id="play" src="Stuffs/play.png" width="27"/>
+		<img id="next" src="Stuffs/next.png" width="29"/>
+           </div>
+     </div>
+</div>
+
+<script type="text/javascript" src="Scripts/clock.js"></script>
+<script type="text/javascript" src="Scripts/lang.js"></script>
+
+<!--Start Clock-->
+<script type="text/javascript">
+        clock({
+          twentyfour : twentyfour,
+          padzero : false,
+          refresh : 5000,
+          success: function(clock){
+document.getElementById('Time').innerHTML = clock.hourtext() + " " + clock.minuteonetext() + " " + clock.minutetwotext() + " " + clock.am();
+            document.getElementById('Date').innerHTML = translate[current].weekday[clock.day()] + " " + clock.date() + " " + translate[current].month[clock.month()];
+          }
+        });
+    </script>
+<!--End Clock-->
+
+<!--Start Weather-->
+  <script type="text/cycript">
+    var BatteryLevel = function() { return [IS2System batteryPercent];};
+    var BatteryState = function() { return [IS2System batteryState];};
+
+  var widgetIdentifier = "com.classicxii.cxhs8";
+  
+  function updateCurrentValues() {
+        var temp = [IS2Weather currentTemperature],
+               tempunit = ([IS2Weather isCelsius]) ? "C" : "F",
+               condition = [IS2Weather currentCondition],
+               city = [IS2Weather currentLocation];
+                 document.getElementById('Weather').innerHTML = city + " " + translate[current].condition[condition] + " " + temp + '&deg;' + tempunit;  
+ 	}
+	function InitLoadW() {
+        [IS2Weather registerForWeatherUpdatesWithIdentifier:widgetIdentifier andCallback:^ void () {
+            updateCurrentValues();
+        }];
+        updateCurrentValues();
+        [IS2Weather setWeatherUpdateTimeInterval:15 forRequester:widgetIdentifier];
+  }
+  window.onunload = function(){ 
+      [IS2Weather unregisterForUpdatesWithIdentifier:widgetIdentifier]; 
+      [IS2Weather removeRequesterForWeatherTimeInterval:widgetIdentifier];
+      
+        return null; 
+    };
+  </script>
+<!--End Weather-->
+
+<script type="text/cycript">
+var $$ = function(el){
+	return document.getElementById(el);
+}
+var media = {
+	play: function(){
+		[IS2Media togglePlayPause];
+		this.check();
+	},
+	next: function(){
+		[IS2Media skipToNextTrack];
+	},
+	prev: function(){
+		[IS2Media skipToPreviousTrack];
+	},
+	check: function(){
+		if([IS2Media isPlaying]){
+			$$('play').src="Stuffs/play.png";
+		}else{
+			$$('play').src="Stuffs/pause.png";
+		}
+	},
+	update: function(){
+		$$("Title").innerHTML = "" + [IS2Media currentTrackTitle].substring(0,21);
+		$$("Artist").innerHTML = "" + [IS2Media currentTrackArtist].substring(0,21);
+		$$("Album").innerHTML = "" + [IS2Media currentTrackAlbum].substring(0,21);
+	},
+	init: function(){
+		switch(musicApp) {
+		    case "com.spotify.client":
+		        break;
+		    case "com.pandora":
+		        break;
+		    case "com.soundcloud.TouchApp":
+		        break;
+		    case "com.apple.Music":
+		        break;
+		    case "com.clearchannel.iheartradio":
+		        break;
+		    case "com.siriusxm.siriusxmonline":
+		        break;
+		    case "com.google.PlayMusic":
+		        break;
+		    case "com.google.ios.youtubemusic":
+		        break;
+		    case "com.shazam.Shazam":
+		        break;
+		    case "com.amazon.mp3.AmazonCloudPlayer":
+		        break;
+		    case "com.tunein.TuneInRadio":
+		        break;
+		    case "com.slacker.radio":
+		        break;
+		    case "com.deezer.Deezer":
+		        break;
+		    case "com.aspiro.TIDAL":
+		        break;
+		    case "ca.galaxie.mobile":
+		        break;
+		    case "com.netease.cloudmusic":
+		        break;
+		}
+		[IS2Media registerForNowPlayingNotificationsWithIdentifier:"com.classicxiirepo.cxhs8" andCallback:^ void () {
+		media.update();
+		}];
+	},
+	kill: function(){
+		[IS2Media unregisterForNotificationsWithIdentifier:"com.classicxiirepo.cxhs8"];
+		return null;
+	}
+};
+//var musicApp = "com.apple.Music"; //Options.plist
+$$('controls').addEventListener('touchend', function(el){
+	media[el.target.id]();
+});
+$$('Open').addEventListener('touchend',function(){
+	[IS2System openApplication:@"" + musicApp];
+});
+$$('Title').addEventListener('touchend',function(){
+	[IS2System openApplication:@"" + musicApp];
+});
+media.init();
+window.onunload = function(){
+	media.kill();
+}
+</script>
+
+<script>
+    (function updateBatt(){
+document.getElementById('Battery').textContent = BatteryState() + " " + BatteryLevel() + '%';
+
+     	setTimeout(updateBatt, 5000);
+    }());
+</script>
+
+<script type="text/javascript">
+var $$ = function(el){
+	return document.getElementById(el);
+}
+function toggleDiv(){
+    var element = 
+$$('Basetwo');
+    if(element.style.display === 'none'){
+        element.style.display = 'block';
+$$('Base').style.display = 'none';
+$$('Plus').style.display = 'none';
+    }else{
+        element.style.display = 'none';
+$$('Base').style.display = 'block';
+$$('Plus').style.display = 'block';
+    }
+}
+$$('Plus').addEventListener('touchend',function(){
+    toggleDiv();
+});
+$$('Exit').addEventListener('touchend',function(){
+    toggleDiv();
+});
+</script>
+
+<script type="text/cycript">
+var $$ = function(el){
+	return document.getElementById(el);
+}
+if(onlymusicplayer){
+$$("Base").style.display = "none";
+$$("Basetwo").style.display = "block";
+$$("Album").style.display = "block";
+$$("Plus").style.display = "none";
+$$("Exit").style.display = "none";
+}
+if(disableBar){
+$$("bar").style.display = "none";
+}
+</script>
+</body>
+</html>
