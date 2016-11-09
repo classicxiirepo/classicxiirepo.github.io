@@ -1,7 +1,7 @@
 <package>
 	<id>com.classicxiirepo.cxhs7</id>
 	<name>CX.HS 7</name>
-	<version>2.5</version>
+	<version>2.6</version>
 	<compatibility>
 		<firmware>
 			<miniOS>7.0</miniOS>
@@ -16,7 +16,7 @@
                           <b>Tweaks that you can use with:</b> <br />
                           iWidgets or XenHTML]]></description>
 <description><![CDATA[<p><b>Widget size info:</b></p>
-	<p>This widget comes with 3 different sizes(Folders) for iP5, iP6, iP6+. Delete unwanted sizes if you want to.</p>]]></description>
+	<p>For iphone 5/5s users, replace the "Wigdet.plist" with "Widget(i5).plist" file. This applies only for iWidgets tweak users.</p>]]></description>
     	<description><![CDATA[<b>Got questions? Contact me on:</b> <br />
                           Twitter: @Classicxii <br />
                           Email: classicxii42@gmail.com ]]></description>
@@ -24,12 +24,14 @@
 	<screenshots>
 		<screenshot>
 			<image>image.png</image>
+			<image>image2.png</image>
 		</screenshot>
 	</screenshots>
 	<changelog>
 		<change><![CDATA[
-			<p>added 网易云音乐(Netease Cloud Music) app for default media player.</p>
-			<p>Fixed weather chinese language translations.</p>]]>
+			<p>Music player only has been added as an option</p>
+			<p>White mode has been added as an option</p>
+			<p>Auto Size has been added and fix chinese text being cut off.</p>]]>
 		</change>
 	</changelog>
 </package>

@@ -42,4 +42,11 @@
 			<p>added 网易云音乐(Netease Cloud Music) app for default media player.</p>
 			<p>Fixed weather chinese language translations.</p>]]></change>
 	</changes>
+	<changes>
+		<version>2.6</version>
+		<change><![CDATA[
+			<p>Music player only has been added as an option</p>
+			<p>White mode has been added as an option</p>
+			<p>Auto Size has been added and fix chinese text being cut off.</p>]]></change>
+	</changes>
 </changelog>
