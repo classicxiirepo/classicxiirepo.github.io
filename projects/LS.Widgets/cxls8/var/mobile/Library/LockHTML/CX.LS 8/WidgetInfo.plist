@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>isFullscreen</key>
-    <true/>
+	<true/>
 	<key>size</key>
 	<dict>
-		<key>width</key>
-		<integer>100</integer>
 		<key>height</key>
+		<integer>100</integer>
+		<key>width</key>
 		<integer>100</integer>
 	</dict>
 	<key>useOptionsPlist</key>
- 	<true/>
+	<true/>
 </dict>
 </plist>

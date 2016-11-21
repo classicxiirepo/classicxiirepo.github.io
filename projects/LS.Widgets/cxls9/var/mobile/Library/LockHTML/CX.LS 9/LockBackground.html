@@ -24,34 +24,108 @@ body {
       src:url(Fonts/Shrimp.ttf);
 }
 #Clock{
-position:absolute; top:8.5%; left:78.3%; width:15%; text-align:center; z-index:50; font-size:13vw; opacity:0.9; line-height:18px; font-style:italic; color:white;
+      position:absolute; 
+      top:8.7%; 
+      left:78.3%;
+      width:15%; 
+      text-align:center; 
+      z-index:50;
+      font-size:13vw; 
+      opacity:0.9;
+      line-height:18px; 
+      font-style:italic; 
+      color:white;
 }
 #Cal{
-position:absolute; top:22%; left:78%; text-align:center; z-index:50; font-size:3vw; line-height:15px; opacity:0.8; width:17%;
+      position:absolute; 
+      top:22%;
+      left:78%;
+      text-align:center; 
+      z-index:50;
+      font-weight:300;
+      text-shadow: 0px 1px 1px rgba(100,100,100, 1.0);
+      font-size:3vw; 
+      line-height:15px; 
+      opacity:0.9;
+      width:17%;
 }
 #txt{
-position:absolute; top:24%; left:80.5%; text-align:center; z-index:50; font-size:3vw;  line-height:15px; opacity:0.8;
+      position:absolute;
+      top:24%; 
+      left:80.5%; 
+      text-align:center;
+      z-index:50;
+      text-shadow: 0px 1px 1px rgba(100,100,100, 1.0);
+      font-size:3vw;
+      line-height:15px; 
+      opacity:0.8;
 }
 #txt2{
-position:absolute; top:24%; left:85%; text-align:center; z-index:50; font-size:3vw; line-height:15px; opacity:0.8; 
+       position:absolute; 
+       top:24%; 
+       left:85%; 
+       text-align:center;
+       text-shadow: 0px 1px 1px rgba(100,100,100, 1.0);
+       z-index:50;
+       font-size:3vw; 
+       line-height:15px; 
+       opacity:0.8; 
 }
 #txt3{
-position:absolute; top:24%; left:89.5%; text-align:center; z-index:50; font-size:3vw; opacity:0.8; line-height:15px; 
+       position:absolute; 
+       top:24%; 
+       left:89.5%; 
+       text-align:center;
+       z-index:50; 
+       text-shadow: 0px 1px 1px rgba(100,100,100, 1.0);
+       font-size:3vw; 
+       opacity:0.8; 
+       line-height:15px; 
 }
 #Batt{
-position:absolute; top:80%; left:0%; width:100%; text-align:center; z-index:50; font-size:6vw; opacity:0.8;
+       position:absolute; 
+       top:80%; 
+       left:0%; 
+       width:100%; 
+       text-align:center; 
+       z-index:50;
+       font-size:6vw; 
+       text-shadow: 0px 1px 1px rgba(100,100,100, 1.0);
+       opacity:1;
 }
 #LevelDisplay{
-font-size:16vw; font-style:italic; 
+       font-size:16vw;
+       font-style:italic; 
 }
 #Percent{
-position:absolute; top:81%; left:35%; font-size:4.5vw; font-style:italic; opacity:0.8;
+       position:absolute;
+       top:81%; 
+       left:35%; 
+       text-shadow: 0px 1px 1px rgba(100,100,100, 1.0);
+       font-size:4.5vw;
+       font-style:italic; 
+       opacity:1;
 }
 #Box{
-position:absolute; top:0%; left:78%; width:17%; height:21%; z-index:10; background-color:black; box-shadow:0px 0px 4px rgba(0,0,0, 0.8); opacity:0.9;
+       position:absolute;
+       top:0%; 
+       left:78%; 
+       width:17%;
+       height:21%; 
+       z-index:10; 
+       background-color:black; 
+       box-shadow:0px 0px 4px rgba(0,0,0, 0.8);      
+       opacity:0.9;
 }
 #Box2{
-position:absolute; top:5%; left:79%; width:14.5%; height:15%; z-index:10; border:1px solid white; opacity:0.9;
+       position:absolute;
+       top:5%; 
+       left:79%;
+       width:14.5%;
+       height:15%;
+       z-index:10;
+       border:1px solid white; 
+       opacity:0.9;
 }
 </style>
 </head>
@@ -123,6 +197,29 @@ document.getElementById("Batt").style.display = "none";
 document.getElementById("Percent").style.display = "none";
 }
 </script>
-
+<script type="text/cycript">
+var $$ = function(el){
+  return document.getElementById(el);
+  }
+  if(whitemodeon){
+    $$("Box").style.backgroundColor = "eeeeee";
+    $$("Box").style.opacity = "0.9";
+    $$("Box2").style.border = "solid 1px #282828";
+    $$("Box2").style.opacity = "0.8";
+    $$("Clock").style.color = "#282828";
+    $$("Cal").style.color = "eeeeee";
+    $$("Cal").style.opacity = "0.9";
+    $$("txt").style.color = "eeeeee";
+    $$("txt").style.opacity = "0.9";
+    $$("txt2").style.color = "eeeeee";
+    $$("txt2").style.opacity = "0.9";
+    $$("txt3").style.color = "eeeeee";
+    $$("txt3").style.opacity = "0.9";
+    $$("Batt").style.color = "eeeeee";
+    $$("Batt").style.opacity = "0.9";
+    $$("Percent").style.color = "eeeeee";
+    $$("Percent").style.opacity = "0.9";
+  }
+</script>
 </body>
 </html>

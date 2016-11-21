@@ -13,4 +13,9 @@
 		<version>2.1</version>
 		<change>Added new font and replaced the clock font.</change>
 	</changes>
+		<changes>
+		<version>2.2</version>
+		<change><![CDATA[
+			<p>Added white mode</p>]]></change>
+	</changes>
 </changelog>

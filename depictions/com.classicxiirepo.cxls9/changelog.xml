@@ -14,4 +14,9 @@
 		<change><![CDATA[
 			<p>Hopefully this fixes the widget not working for some users.</p>]]></change>
 	</changes>
+	<changes>
+		<version>2.2</version>
+		<change><![CDATA[
+			<p>Added white mode</p>]]></change>
+	</changes>
 </changelog>

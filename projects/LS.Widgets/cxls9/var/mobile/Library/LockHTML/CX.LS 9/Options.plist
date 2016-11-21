@@ -32,5 +32,15 @@
 		<key>type</key>
 		<string>switch</string>
 	</dict>
+	<dict>
+		<key>default</key>
+		<false/>
+		<key>label</key>
+		<string>White Mode</string>
+		<key>name</key>
+		<string>whitemodeon</string>
+		<key>type</key>
+		<string>switch</string>
+	</dict>
 </array>
 </plist>

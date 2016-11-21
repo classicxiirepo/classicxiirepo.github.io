@@ -10,4 +10,9 @@
 			<p>Changed the date info from text to numbers and added year. Date written in text couldn't fit in the box.</p>
 			<p>Added "Options.plist" file and removed "Config.js" file.</p>]]></change>
 	</changes>
+	<changes>
+		<version>2.1</version>
+		<change><![CDATA[
+			<p>Nothing new, forgot to add small missing code in widget.html</p>]]></change>
+	</changes>
 </changelog>
