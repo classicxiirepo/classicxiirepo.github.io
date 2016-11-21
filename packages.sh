@@ -10,3 +10,4 @@ dpkg-deb -bZgzip projects/LS.Widgets/cxls9 debs
 dpkg-deb -bZgzip projects/LS.Widgets/cxls10 debs
 dpkg-deb -bZgzip projects/HS.Widgets/cxhs7 debs
 dpkg-deb -bZgzip projects/HS.Widgets/cxhs8 debs
+dpkg-deb -bZgzip projects/HS.Widgets/cxhs4 debs

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>default</key>
+		<string>App Label 1</string>
+		<key>label</key>
+		<string>App Label 1</string>
+		<key>name</key>
+		<string>app1</string>
+		<key>type</key>
+		<string>edit</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>App Label 2</string>
+		<key>label</key>
+		<string>App Label 2</string>
+		<key>name</key>
+		<string>app2</string>
+		<key>type</key>
+		<string>edit</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>App Label 3</string>
+		<key>label</key>
+		<string>App Label 3</string>
+		<key>name</key>
+		<string>app3</string>
+		<key>type</key>
+		<string>edit</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>App Label 4</string>
+		<key>label</key>
+		<string>App Label 4</string>
+		<key>name</key>
+		<string>app4</string>
+		<key>type</key>
+		<string>edit</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>App Label 5</string>
+		<key>label</key>
+		<string>App Label 5</string>
+		<key>name</key>
+		<string>app5</string>
+		<key>type</key>
+		<string>edit</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>App Label 6</string>
+		<key>label</key>
+		<string>App Label 6</string>
+		<key>name</key>
+		<string>app6</string>
+		<key>type</key>
+		<string>edit</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>App Label 7</string>
+		<key>label</key>
+		<string>App Label 7</string>
+		<key>name</key>
+		<string>app7</string>
+		<key>type</key>
+		<string>edit</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>App Label 8</string>
+		<key>label</key>
+		<string>App Label 8</string>
+		<key>name</key>
+		<string>app8</string>
+		<key>type</key>
+		<string>edit</string>
+	</dict>
+</array>
+</plist>

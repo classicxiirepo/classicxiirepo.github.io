@@ -1,0 +1,250 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>CX.HS 4 by @Classicxii</title>
+
+<!--Credits: Original code belongs to JunesiPhone & Matchstic. Code modify & integrated by Classicxii -->
+
+<style type="text/css">
+body{
+    text-transform:capitalize;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+@media (max-device-width:375){
+Body{
+    margin-left:-1;
+    -webkit-transform:scale(0.908);
+    -webkit-transform-origin: top left;    
+    }
+}
+@media (max-device-width:320){
+Body{
+    -webkit-transform:scale(0.77299);
+    -webkit-transform-origin: top left;
+    }
+}
+@font-face {
+	font-family:GeosansLight;
+	src: url(Stuffs/GeosansLight.ttf);
+}
+@font-face {
+	font-family:Heavitas;
+	src: url(Stuffs/Heavitas.ttf);
+}
+.Container{
+    position: relative;
+    width: 414px;
+    height: 738px;
+    overflow: hidden;
+    color: white;
+    text-align:center; 
+    letter-spacing:1px;
+    z-index: 1;
+}
+#Clock{
+	position:absolute; 
+	top:14px; 
+	left:0px; 
+	width:100%; 
+    z-index:1;
+    opacity:1;
+	font-size:22px;
+    font-family:Heavitas;
+}
+#Weather{
+	position:absolute; 
+	top:37px; 
+	left:0px; 
+        font-weight:900;
+	width:100%; 
+	z-index:10;
+	font-size:10px;
+    font-family:GeosansLight;
+}
+#Weekday{
+	position:absolute; 
+	top:37px;
+	left:0px; 
+	width:100%;  
+	z-index:3;
+        font-weight:900;
+	font-size:10px;
+    font-family:GeosansLight;
+}
+#Month{
+	position:absolute; 
+	top:37px; 
+	left:0px; 
+	width:100%; 
+	height:50px; 
+        font-weight:900;
+	z-index:3;
+	font-size:10px;
+    font-family:GeosansLight;
+}
+#Temp{
+    position:absolute; 
+    top:14px; 
+    left:0px; 
+    width:100%; 
+    z-index:3;
+	font-size:22px;
+    font-family:Heavitas;
+}
+#Date{
+    position:absolute; 
+    top:14px; 
+    left:0px; 
+    width:100%;
+    z-index:3; 
+    font-size:22px;
+    font-family:Heavitas;
+}
+#LevelDisplay{
+    position:absolute; 
+    top:130px; 
+    left:0px;
+    font-size:50px; 
+    z-index: 0; 
+    width:100%; 
+    text-align:center; 
+    opacity: 0.7;
+    font-family: Heavitas;   
+}
+#BatteryLevel{
+    position:absolute; 
+    top:190px; 
+    left:0px;
+    font-size:14px; 
+    z-index: 0; 
+    font-weight:900;
+    width:100%; 
+    text-align:center; 
+    opacity: 0.7;
+    font-family:GeosansLight;   
+}
+#Left{
+    position:absolute;
+    top:310px;
+    left:11px;
+    height:60px;
+    width:125px;
+    background-color:#904AAD;
+    border-bottom: solid 0px white;
+    box-shadow:0px 3px 3px rgba(0,0,0, 0.5);
+    opacity:0.9;
+    z-index:0;
+}
+#Middle{
+    position:absolute;
+    top:310px;
+    left:145px;
+    height:60px;
+    width:125px;
+    background-color:#4784D4;
+    border-bottom: solid 0px white;
+    box-shadow:0px 3px 3px rgba(0,0,0, 0.5);
+    opacity:0.9;
+    z-index:0;
+}
+#Right{
+    position:absolute;
+    top:310px;
+    left:278px;
+    height:60px;
+    width:125px;
+    background-color:#60A7B7;
+    border-bottom: solid 0px white;
+    box-shadow:0px 3px 3px rgba(0,0,0, 0.5);
+    opacity:0.9;
+    z-index:0;
+}
+</style>
+</head>
+
+<body onload="didLoadPage()">
+
+<div id="Container" class="Container">
+<div id="Left">
+	<div id="Date">12</div>
+	<div id="Month">March</div>
+</div>
+<div id="Middle">
+	<div id="Clock">11:01</div>
+    <div id="Weekday">Saturday</div> 
+</div>
+<div id="Right">
+	<div id="Weather">Cloudy</div>
+    <div id="Temp">49</div>
+</div>
+    <div id="LevelDisplay">100%</div>
+    <div id="BatteryLevel">Battery Level</div>
+</div>
+
+<script type="text/javascript" src="Scripts/clock.js"></script>
+<script type="text/javascript" src="Scripts/lang.js"></script>
+<script type="text/javascript">
+        clock({
+          twentyfour : twentyfour,
+          padzero : padzero,
+          refresh : 5000,
+          success: function(clock){
+document.getElementById('Clock').innerHTML = clock.hour() + ":" + clock.minute();
+document.getElementById('Date').innerHTML = clock.date();
+document.getElementById('Month').innerHTML = translate[current].month[clock.month()];
+document.getElementById('Weekday').innerHTML = translate[current].weekday[clock.day()];
+          }
+        });
+    </script>
+  <script type="text/cycript">
+  var BatteryLevel = function() { return [IS2System batteryPercent];};
+  var widgetIdentifier = "com.classicxii.cxhs4";
+  
+  function updateCurrentValues() {
+        var temp = [IS2Weather currentTemperature],
+            condition = [IS2Weather currentCondition];
+            
+document.getElementById('Weather').innerHTML = translate[current].condition[condition];
+document.getElementById('Temp').innerHTML = temp;
+ 	}
+	
+	function didLoadPage() {
+	   // Register a callback for whenever weather data changes.
+        [IS2Weather registerForWeatherUpdatesWithIdentifier:widgetIdentifier andCallback:^ void () {
+            updateCurrentValues();
+        }];
+	
+	   // Grab current values
+        updateCurrentValues();
+        [IS2Weather setWeatherUpdateTimeInterval:10 forRequester:widgetIdentifier];
+  }
+    // Make sure to de-register ourselves when removed from the user's screen.
+  window.onunload = function(){ 
+      [IS2Weather unregisterForUpdatesWithIdentifier:widgetIdentifier]; 
+      [IS2Weather removeRequesterForWeatherTimeInterval:widgetIdentifier];
+      
+        return null; 
+    };
+  </script>
+ <script>
+    (function updateBatt(){
+document.getElementById('LevelDisplay').textContent = BatteryLevel() + '%';
+     	setTimeout(updateBatt, 5000);
+    }());
+</script>
+<script type="text/cycript">
+var $$ = function(el){
+  return document.getElementById(el);
+  }
+  if(DisableBattery){
+    $$("LevelDisplay").style.display = "none";
+    $$("BatteryLevel").style.display = "none";
+    $$("Container").style.marginTop = "-70%";
+  }
+</script>
+</body>
+</html>

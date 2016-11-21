@@ -178,3 +178,18 @@ Author: Classicxii <classicxii42@gmail.com>
 Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxls9
 Name: CX.LS 9
 
+Package: com.classicxiirepo.cxhs4
+Version: 2.0
+Architecture: iphoneos-arm
+Maintainer: Classicxii <classicxii42@gmail.com>
+Filename: ./debs/com.classicxiirepo.cxhs4_2.0_iphoneos-arm.deb
+Size: 150452
+MD5sum: 90ce495c60f3cae630ceb3c315beaeee
+SHA1: d865ee67155567a2ff9192704cf1afa8021ef81a
+SHA256: 8b582635cdcc416f9f90d59afe8123643ea1c3cdfbd138197b08ce4fc5c3dc9e
+Section: Widgets (CX.HS)
+Description: Classicxii's Homescreen Widget
+Author: Classicxii <classicxii42@gmail.com>
+Depiction: https://classicxiirepo.github.io/depictions/?p=com.classicxiirepo.cxhs4
+Name: CX.HS 4
+

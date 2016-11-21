@@ -1,0 +1,14 @@
+<changelog>
+	<changes>
+		<version>1.0</version>
+		<change>Initial Release</change>
+	</changes>
+		<changes>
+		<version>2.0</version>
+		<change><![CDATA[
+			<p>Widget was recoded.</p>
+			<p>Switched to IS2 weather info, removed weather code.</p>
+			<p>Added "Options.plist" file and removed "Config.js" file.</p>
+			<p>Added an option to hide battery.</p>]]></change>
+	</changes>
+</changelog>

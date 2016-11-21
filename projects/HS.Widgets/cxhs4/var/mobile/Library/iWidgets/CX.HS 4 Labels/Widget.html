@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>CX.HS 4 Labels by @Classicxii</title>
+
+<!--Credits: Original code belongs to JunesiPhone & Matchstic. Code modify & integrated by Classicxii -->
+
+<style type="text/css">
+body{
+    text-transform:capitalize;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+@media (max-device-width:375){
+Body{
+    margin-left:-1;
+    -webkit-transform:scale(0.908);
+    -webkit-transform-origin: top left;    
+    }
+}
+@media (max-device-width:320){
+Body{
+    -webkit-transform:scale(0.77299);
+    -webkit-transform-origin: top left;
+    }
+}
+@font-face {
+	font-family:GeosansLight;
+	src: url(Stuffs/GeosansLight.ttf);
+}
+@font-face {
+	font-family:Heavitas;
+	src: url(Stuffs/Heavitas.ttf);
+}
+.Container{
+    position: relative;
+    width: 414px;
+    height: 738px;
+    overflow: hidden;
+    color: white;
+    text-align:center; 
+    letter-spacing:1px;
+    z-index: 1;
+}
+#Labels{
+    position:absolute;
+    top:5px;
+    left:105px;
+    text-align:left; 
+    font-family:GeosansLight;
+}
+#Labelstwo{
+    position:absolute;
+    top:5px;
+    left:305px;
+    text-align:left; 
+    font-family:GeosansLight;
+}
+</style>
+</head>
+
+<body onload="didLoadPage()">
+
+<div id="Container" class="Container">
+<div id="Labels" style="line-height: 70px;">
+    <div id="One"></div>
+    <div id="Two"></div>
+    <div id="Three"></div>
+    <div id="Four"></div>
+</div>
+<div id="Labelstwo" style="line-height: 70px;">
+    <div id="Five"></div>
+    <div id="Six"></div>
+    <div id="Seven"></div>
+    <div id="Eight"></div>
+</div>
+</div>
+
+ <script>
+window.onload=function(){
+document.getElementById("One").innerHTML=app1;
+document.getElementById("Two").innerHTML=app2;
+document.getElementById("Three").innerHTML=app3;
+document.getElementById("Four").innerHTML=app4;
+document.getElementById("Five").innerHTML=app5;
+document.getElementById("Six").innerHTML=app6;
+document.getElementById("Seven").innerHTML=app7;
+document.getElementById("Eight").innerHTML=app8};
+</script>
+</body>
+</html>
