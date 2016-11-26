@@ -1,7 +1,7 @@
 <package>
-	<id>com.classicxiirepo.cxhs8</id>
-	<name>CX.HS 8</name>
-	<version>1.0</version>
+	<id>com.classicxiirepo.cxhs4</id>
+	<name>CX.HS 5</name>
+	<version>2.0</version>
 	<compatibility>
 		<firmware>
 			<miniOS>7.0</miniOS>
@@ -15,11 +15,11 @@
 		<description><![CDATA[<b>Installed to the iWidgets directory:</b> </ br>/var/mobile/Library/iWidgets <br /> <br />
                           <b>Tweaks that you can use with:</b> <br />
                           iWidgets or XenHTML]]></description>
-<description><![CDATA[<p><b>Widget size info:</b></p>
-	<p>For iphone 5/5s users, replace the "Widget.plist" with "Widget(i5).plist" file. This applies only for iWidgets tweak users.</p>]]></description>
+		<description><![CDATA[<p><b>Widget size info:</b></p>
+					<p>For iphone 5/5s users, replace the "Widget.plist" with "Widget(iP5).plist" file, same goes for other iphone users. This only applies for iWidgets tweak users.</p>]]></description>
     	<description><![CDATA[<b>Got questions? Contact me on:</b> <br />
                           Twitter: @Classicxii <br />
-                          Email: classicxii42@gmail.com ]]></description>
+                          Email: classicxii42@gmail.com]]></description>
 	</descriptionlist>
 	<screenshots>
 		<screenshot>
@@ -28,9 +28,16 @@
 		<screenshot>
 			<image>image2.png</image>
 		</screenshot>
+		<screenshot>
+			<image>image3.png</image>
+		</screenshot>
 	</screenshots>
 	<changelog>
-		<change><![CDATA[<p>Initial Release</p>]]>
+		<change><![CDATA[
+			<p>Widget was recoded.</p>
+			<p>Switched to IS2 weather info, removed weather code.</p>
+			<p>Added "Options.plist" file and removed "Config.js" file.</p>
+			<p>Added an option to hide the bottom bar/song info.</p>]]>
 		</change>
 	</changelog>
 </package>

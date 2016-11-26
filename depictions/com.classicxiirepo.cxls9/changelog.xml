@@ -19,4 +19,9 @@
 		<change><![CDATA[
 			<p>Added white mode</p>]]></change>
 	</changes>
+	<changes>
+		<version>2.3</version>
+		<change><![CDATA[
+			<p>Fixed not showing up properly on XenHTML</p>]]></change>
+	</changes>
 </changelog>
